@@ -7,7 +7,7 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div className="homepage" style={{backgroundImage: `url('./assets/homepage-background.jpg')`}}>
+            <div className="homepage" style={{backgroundImage: `url('./assets/homepage-background2.png')`}}>
                 <div className="homepage__top-area"></div>
                 <div className="homepage__center-area">
                     <div className="homepage__headers-container">
