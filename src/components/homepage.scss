@@ -66,10 +66,10 @@
         transform: translate(-50%, -50%);
         background-color: rgba(145, 143, 143, 0.4);
         border-style: solid;
-        border-width: 10px 7px 6px 10px;
+        border-width: 9px 6px 5px 8px;
         border-color: rgba(148, 148, 148, 0.425);
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         z-index: -1;
     }
@@ -87,12 +87,18 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: $bars-background;
         height: 20%;
         border-top-left-radius: 40% 22%;
         border-top-right-radius: 40% 22%;
         text-align: center;
         padding-top: 30px;
+    }
+
+    &__footer {
+        padding-top: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.2rem;
     }
 
 }
