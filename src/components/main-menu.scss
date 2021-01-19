@@ -11,9 +11,10 @@
     background-position: center;
     background-color: $default-background;
     color: white;
-    // text-align: center;
 
     &__header {
+        margin-top: 5%;
+        margin-left: 15%;
         font-size: 3rem;
         font-weight: bolder;
         font-style: italic;
@@ -34,17 +35,30 @@
         box-shadow: 0 0 5px $main-menu-border-outline;
     }
 
-    &__links {
+    &__links-container {
         border-radius: .4rem 1.2rem .5rem .3125rem;
         box-shadow: 0 0 5px $main-menu-border-outline; 
     }
 
+    &__links {
+        padding-top: 5.5rem;
+        padding-bottom: 4rem;
+        text-align: center
+    }
+
     &__link {
-        width: 30%;
-        height: 50px;
-        font-size: 2.5rem;
+        text-align: center;
+        background-color: $link-background-color;
+        width: 60%;
+        height: 4rem;
+        font-size: 3rem;
+        font-weight: bold;
         font-family: sans-serif;
         color: $start-icon-text;
+        border-style: solid;
+        border-color: $start-icon-text;
+        border-radius:  3rem .625rem 3rem .625rem;
+        box-shadow: 0 0 15px $link-border-color; 
 
         &:hover {
             color: black;
@@ -55,6 +69,35 @@
             margin-left: 8rem;
         }
 
+        &--opt2 {
+            margin-left: 3rem;
+        }
+
+        &--opt3 {
+            margin-left: -2rem;
+        }
+
+        &--opt4 {
+            margin-left: 1rem;
+        }
+
+    }
+
+    &__prev-text {
+        text-align: center;
+        width: 40%;
+        height: 3rem;
+        margin-top: -3.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        color: white;
+        background-color: $link-background-color;
+        border-style: solid;
+        border-color: white;
+        box-shadow: 0 0 10px blanchedalmond;
+        border-radius: .625rem;
     }
 
 

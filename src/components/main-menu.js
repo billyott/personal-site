@@ -47,11 +47,13 @@ class MainMenu extends React.Component {
             <div className="main-menu" style={{backgroundImage: `url('./assets/mainmenu-background.png')`}}>
                 <div className="main-menu__header">MAIN MENU</div>
                 <div className="main-menu__menu-content">
-                    <div className="main-menu__links">
-                        <div className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected}>portfolio</div>
-                        <div className={"main-menu__link main-menu__link--opt2"} onMouseEnter={this.updateSeletedAbout} onMouseLeave={this.resetSelected}> about</div>
-                        <div className={"main-menu__link main-menu__link--opt3"} onMouseEnter={this.updateSeletedBlog} onMouseLeave={this.resetSelected}>blog</div>
-                        <div className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onMouseLeave={this.resetSelected}>contact</div>
+                    <div className="main-menu__links-container">
+                        <div className="main-menu__links">
+                            <div className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected}>Portfolio</div>
+                            <div className={"main-menu__link main-menu__link--opt2"} onMouseEnter={this.updateSeletedAbout} onMouseLeave={this.resetSelected}>About</div>
+                            <div className={"main-menu__link main-menu__link--opt3"} onMouseEnter={this.updateSeletedBlog} onMouseLeave={this.resetSelected}>Blog</div>
+                            <div className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onMouseLeave={this.resetSelected}>Contact</div>
+                        </div>
                     </div>
                     <div className="main-menu__prev-visual"></div>
                 </div>
