@@ -82,8 +82,8 @@ class MainMenu extends React.Component {
                         <div className={`main-menu__link--opt4${this.modifyClassContact()}`} onClick={this.updateSeletedContact}>contact</div>
                     </div>
                     <div className="main-menu__prev-visual"></div>
-                    <div className="main-menu__prev-text">{this.generatePrevText()}</div>
                 </div>
+                <div className="main-menu__prev-text">{this.generatePrevText()}</div>
             </div>
         );
     }

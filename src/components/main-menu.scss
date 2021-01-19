@@ -12,4 +12,32 @@
     background-color: $default-background;
     color: white;
     text-align: center;
+
+    &__header {
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.45);
+    }
+
+    &__menu-content {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: $main-menu-border;
+        border-style: solid;
+        border-top-width: 10px;
+        border-left-width: 15px;
+        border-right-width: 15px;
+        border-bottom-width: 60px;
+        border-radius: 20px 40px 60px 10px;
+        box-shadow: 1px 1px 5px $main-menu-border-outline;
+    }
+
+    &__links {
+        box-shadow: 1px 1px 5px $main-menu-border-outline;
+        border-radius: 20px 40px 15px 10px;
+    }
+
+
 }
