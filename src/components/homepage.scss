@@ -69,6 +69,11 @@
         font-size: 1.2em;
     }
 
+    &__start-text:focus {
+        font-size: 1.2em;
+        outline: none;
+    }
+
     &__start-icon {
         position: absolute;
         top: 50%;
@@ -89,6 +94,7 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: 7px;
         color: $start-icon-text;
+        text-decoration: none;
     }
 
     &__bottom-area {

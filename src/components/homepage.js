@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './homepage.scss';
 
@@ -19,7 +20,7 @@ class Homepage extends React.Component {
                     </div>
                     <div className="homepage__start-container">
                         <div className="homepage__start-icon"></div>
-                        <div className="homepage__start-text">PRESS START</div>
+                        <NavLink to="/main-menu" className="homepage__start-text">PRESS START</NavLink>
                     </div>
                 </div>
                 <div className="homepage__bottom-area">

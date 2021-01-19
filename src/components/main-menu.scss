@@ -47,10 +47,12 @@
     }
 
     &__link {
+        display: block;
         text-align: center;
         background-color: $link-background-color;
         width: 60%;
         height: 4rem;
+        text-decoration: none;
         font-size: 3rem;
         font-weight: bold;
         font-family: sans-serif;
@@ -61,6 +63,12 @@
         box-shadow: 0 0 15px $link-border-color; 
 
         &:hover {
+            color: black;
+            background-color: $start-icon-text;
+        }
+
+        &:focus {
+            outline: none;
             color: black;
             background-color: $start-icon-text;
         }

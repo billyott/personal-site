@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './main-menu.scss';
 
@@ -10,15 +11,15 @@ class MainMenu extends React.Component {
 
     generatePrevText = () => {
         if (this.state.selected === "portfolio") {
-            return("See my dev work!")
+            return("My projects!")
         } else if (this.state.selected === "about") {
-            return("Who is this guy?")
+            return("The story so far!")
         } else if (this.state.selected === "blog") {
-            return("Where I share my knowledge!")
+            return("My thoughts!")
         }  else if (this.state.selected === "contact") {
             return("Get in touch!")
         } else {
-            return ("Main Menu")
+            return ("Make a selection!")
         }
     }
 
@@ -49,10 +50,10 @@ class MainMenu extends React.Component {
                 <div className="main-menu__menu-content">
                     <div className="main-menu__links-container">
                         <div className="main-menu__links">
-                            <div className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected}>Portfolio</div>
-                            <div className={"main-menu__link main-menu__link--opt2"} onMouseEnter={this.updateSeletedAbout} onMouseLeave={this.resetSelected}>About</div>
-                            <div className={"main-menu__link main-menu__link--opt3"} onMouseEnter={this.updateSeletedBlog} onMouseLeave={this.resetSelected}>Blog</div>
-                            <div className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onMouseLeave={this.resetSelected}>Contact</div>
+                            <NavLink to="/portfolio" className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onFocus={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>Portfolio</NavLink>
+                            <NavLink to="/about" className={"main-menu__link main-menu__link--opt2"} onMouseEnter={this.updateSeletedAbout} onFocus={this.updateSeletedAbout} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>About</NavLink>
+                            <NavLink to="/blog" className={"main-menu__link main-menu__link--opt3"} onMouseEnter={this.updateSeletedBlog} onFocus={this.updateSeletedBlog} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>Blog</NavLink>
+                            <NavLink to="/contact" className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onFocus={this.updateSeletedContact} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>Contact</NavLink>
                         </div>
                     </div>
                     <div className="main-menu__prev-visual"></div>
