@@ -11,7 +11,7 @@
     background-position: center;
     background-color: $default-background;
     color: white;
-    text-align: center;
+    // text-align: center;
 
     &__header {
         font-size: 3rem;
@@ -26,17 +26,35 @@
         margin-right: auto;
         border-color: $main-menu-border;
         border-style: solid;
-        border-top-width: 10px;
-        border-left-width: 15px;
-        border-right-width: 15px;
-        border-bottom-width: 60px;
-        border-radius: 20px 40px 60px 10px;
-        box-shadow: 1px 1px 5px $main-menu-border-outline;
+        border-top-width: 1rem;
+        border-left-width: 1.2rem;
+        border-right-width: 1.2rem;
+        border-bottom-width: 3rem;
+        border-radius: 1.25rem 2.5rem 2.5rem .625rem;
+        box-shadow: 0 0 5px $main-menu-border-outline;
     }
 
     &__links {
-        box-shadow: 1px 1px 5px $main-menu-border-outline;
-        border-radius: 20px 40px 15px 10px;
+        border-radius: .4rem 1.2rem .5rem .3125rem;
+        box-shadow: 0 0 5px $main-menu-border-outline; 
+    }
+
+    &__link {
+        width: 30%;
+        height: 50px;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        color: $start-icon-text;
+
+        &:hover {
+            color: black;
+            background-color: $start-icon-text;
+        }
+
+        &--opt1 {
+            margin-left: 8rem;
+        }
+
     }
 
 

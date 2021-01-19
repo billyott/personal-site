@@ -5,7 +5,7 @@ import './main-menu.scss';
 class MainMenu extends React.Component {
 
     state = {
-        selected: "portfolio"
+        selected: "none"
     }
 
     generatePrevText = () => {
@@ -19,38 +19,6 @@ class MainMenu extends React.Component {
             return("Get in touch!")
         } else {
             return ("Main Menu")
-        }
-    }
-
-    modifyClassPortfolio = () => {
-        if (this.state.selected === "porfolio") {
-            return ("--selected")
-        } else { 
-            return ("--unselected")
-        }
-    }
-
-    modifyClassAbout = () => {
-        if (this.state.selected === "about") {
-            return ("--selected")
-        } else { 
-            return ("--unselected")
-        }
-    }
-
-    modifyClassBlog = () => {
-        if (this.state.selected === "blog") {
-            return ("--selected")
-        } else { 
-            return ("--unselected")
-        }
-    }
-
-    modifyClassContact = () => {
-        if (this.state.selected === "contact") {
-            return ("--selected")
-        } else { 
-            return ("--unselected")
         }
     }
 
@@ -70,16 +38,20 @@ class MainMenu extends React.Component {
         this.setState({selected: "contact"})
     }
 
+    resetSelected = () => {
+        this.setState({selected: "none"})
+    }
+
     render() {
         return (
             <div className="main-menu" style={{backgroundImage: `url('./assets/mainmenu-background.png')`}}>
                 <div className="main-menu__header">MAIN MENU</div>
                 <div className="main-menu__menu-content">
                     <div className="main-menu__links">
-                        <div className={`main-menu__link--opt2${this.modifyClassPortfolio()}`} onClick={this.updateSeletedPortfolio}>portfolio</div>
-                        <div className={`main-menu__link--opt1${this.modifyClassAbout()}`} onClick={this.updateSeletedAbout}> about</div>
-                        <div className={`main-menu__link--opt3${this.modifyClassBlog()}`} onClick={this.updateSeletedBlog}>blog</div>
-                        <div className={`main-menu__link--opt4${this.modifyClassContact()}`} onClick={this.updateSeletedContact}>contact</div>
+                        <div className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected}>portfolio</div>
+                        <div className={"main-menu__link main-menu__link--opt2"} onMouseEnter={this.updateSeletedAbout} onMouseLeave={this.resetSelected}> about</div>
+                        <div className={"main-menu__link main-menu__link--opt3"} onMouseEnter={this.updateSeletedBlog} onMouseLeave={this.resetSelected}>blog</div>
+                        <div className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onMouseLeave={this.resetSelected}>contact</div>
                     </div>
                     <div className="main-menu__prev-visual"></div>
                 </div>
