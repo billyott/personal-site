@@ -1,13 +1,13 @@
 
 import Homepage from './components/homepage';
-import logo from './logo.svg';
-import './App.css';
+import MainMenu from './components/main-menu';
 import './app.scss';
 
 function App() {
   return (
     <div className="app">
-      <Homepage />
+      {/* <Homepage /> */}
+      <MainMenu />
     </div>
   );
 }

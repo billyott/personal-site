@@ -1,0 +1,15 @@
+@import '../styling-vars.scss';
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $default-background;
+    color: white;
+    text-align: center;
+}
