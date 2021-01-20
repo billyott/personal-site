@@ -27,7 +27,7 @@
         width: 75%;
         margin-left: auto;
         margin-right: auto;
-        border-color: $scheme-purple-dark-a4;
+        border-color: $scheme-purple-dark-a7;
         border-style: solid;
         border-top-width: 1rem;
         border-left-width: 1.2rem;
@@ -35,6 +35,28 @@
         border-bottom-width: 3rem;
         border-radius: 1.25rem 2.5rem 2.5rem .625rem;
         box-shadow: 0 0 5px $scheme-purple-light-a4;
+        
+        &--opt1 {
+            border-color: $scheme-blue-a4;
+            box-shadow: 0 0 5px $scheme-blue-a4;
+        }
+
+        &--opt2 {
+            border-color: $scheme-green-a4;
+            box-shadow: 0 0 5px $scheme-green-light-a4;
+        }
+
+        &--opt3 {
+            border-color: $scheme-red-a4;
+            box-shadow: 0 0 5px $scheme-red-light-a4;
+        }
+
+        &--opt4 {
+            border-color: $scheme-yellow-a4;
+            box-shadow: 0 0 5px $scheme-yellow-light-a4;
+        }
+
+
     }
 
     &__links-container {
@@ -51,7 +73,7 @@
     &__link {
         display: block;
         text-align: center;
-        background-color: $scheme-black-a4;
+        background-color: $scheme-black-a7;
         width: 50%;
         height: 4rem;
         text-decoration: none;
@@ -121,7 +143,7 @@
         font-size: 2.5rem;
         font-family: sans-serif;
         color: $scheme-white;
-        background-color: $scheme-black-a4;
+        background-color: $scheme-black-a7;
         border-style: solid;
         border-color: $scheme-white;
         box-shadow: 0 0 10px $scheme-grey-light-a4;

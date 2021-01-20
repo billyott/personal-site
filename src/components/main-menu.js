@@ -37,6 +37,20 @@ class MainMenu extends React.Component {
         }
     }
 
+    updateBorderColor = () => {
+        if (this.state.selected === "portfolio") {
+            return("--opt1")
+        } else if (this.state.selected === "about") {
+            return("--opt2")
+        } else if (this.state.selected === "blog") {
+            return("--opt3")
+        }  else if (this.state.selected === "contact") {
+            return("--opt4")
+        } else {
+            return ("--default")
+        }
+    }
+
     updateSeletedPortfolio = () => {
         this.setState({selected: "portfolio"})
     }
@@ -61,7 +75,7 @@ class MainMenu extends React.Component {
         return (
             <div className="main-menu" style={{backgroundImage: `url('./assets/mainmenu-background.png')`}}>
                 <div className="main-menu__header">MAIN MENU</div>
-                <div className="main-menu__menu-content">
+                <div className={`main-menu__menu-content main-menu__menu-content${this.updateBorderColor()}`}>
                     <div className="main-menu__links-container">
                         <div className="main-menu__links">
                             <NavLink to="/portfolio" className={"main-menu__link main-menu__link--opt1"} onMouseEnter={this.updateSeletedPortfolio} onFocus={this.updateSeletedPortfolio} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>Portfolio</NavLink>

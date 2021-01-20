@@ -1,8 +1,15 @@
 @import '../styling-vars.scss';
 
 .about {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: $scheme-black;
-    margin-bottom: 5%;
 
     &__header {
         margin-top: 5%;
@@ -14,14 +21,14 @@
     }
 
     &__content-outer {
-        border-color: $scheme-green-a4;
+        border-color: $scheme-green-a7;
         border-style: solid;
         border-top-width: 1rem;
         border-left-width: 1.2rem;
         border-right-width: 1.2rem;
         border-bottom-width: 3rem;
         border-radius: 1.25rem 2.5rem 2.5rem .625rem;
-        box-shadow: 0 0 15px $scheme-green-light-a7;
+        box-shadow: 0 0 15px $scheme-green-light-a4;
         width: 75%;
         margin-left: auto;
         margin-right: auto;
@@ -31,7 +38,7 @@
         display: flex;
         flex-direction: row;
         box-shadow: 0 0 10px $scheme-green-light-a4;
-        border-radius: 1rem 1.2rem .5rem .3125rem;
+        border-radius: .4rem 1.2rem .5rem .3125rem;
         padding: 5%;
     }
 
@@ -68,12 +75,14 @@
         text-align: center;
         display: block;
         width: 20%;
-        height: 3.5rem;
+        height: 2.7rem;
         font-weight: bold;
         margin-top: -3.2rem;
         margin-left: auto;
         margin-right: 25%;
-        font-size: 1.5rem;
+        text-decoration: none;
+        padding-top: .3rem;
+        font-size: 2.1rem;
         font-family: sans-serif;
         color: $scheme-white;
         background-color: $scheme-purple-dark-a7;
@@ -81,6 +90,10 @@
         border-color: $scheme-white;
         box-shadow: 0 0 10px $scheme-grey-light;
         border-radius: .625rem;
+        &:hover {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+        }
     }
 
 }

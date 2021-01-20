@@ -6,7 +6,7 @@ import './about.scss';
 function About() {
 
     return(
-        <div className="about">
+        <div className="about" style={{backgroundImage: `url('./assets/about-background.png')`}}>
             <div className="about__header">ABOUT</div>
             <div className="about__content-outer">
                 <div className="about__content-inner">
