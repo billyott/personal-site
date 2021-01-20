@@ -9,6 +9,20 @@ class MainMenu extends React.Component {
         selected: "none"
     }
 
+    generatePrevVisual = () => {
+        if (this.state.selected === "portfolio") {
+            return('./assets/homepage-background.png')
+        } else if (this.state.selected === "about") {
+            return('./assets/self-portrait.png')
+        } else if (this.state.selected === "blog") {
+            return('./assets/homepage-background.png')
+        }  else if (this.state.selected === "contact") {
+            return('./assets/homepage-background.png')
+        } else {
+            return('./assets/homepage-background.png')
+        }
+    }
+
     generatePrevText = () => {
         if (this.state.selected === "portfolio") {
             return("My projects!")
@@ -56,7 +70,7 @@ class MainMenu extends React.Component {
                             <NavLink to="/contact" className={"main-menu__link main-menu__link--opt4"} onMouseEnter={this.updateSeletedContact} onFocus={this.updateSeletedContact} onMouseLeave={this.resetSelected} onBlur={this.resetSelected}>Contact</NavLink>
                         </div>
                     </div>
-                    <div className="main-menu__prev-visual"></div>
+                    <img className="main-menu__prev-visual" src={this.generatePrevVisual()} alt="link preview"/>
                 </div>
                 <div className="main-menu__prev-text">{this.generatePrevText()}</div>
             </div>
