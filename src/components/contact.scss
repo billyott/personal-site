@@ -1,0 +1,105 @@
+@import '../styling-vars.scss';
+
+.contact {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $scheme-black;
+
+    &__header {
+        margin-top: 5%;
+        margin-left: 15%;
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+        color: $scheme-grey-light-a7;
+    }
+
+    &__content-outer {
+        border-color: $scheme-yellow-a4;
+        border-style: solid;
+        border-top-width: 1rem;
+        border-left-width: 1.2rem;
+        border-right-width: 1.2rem;
+        border-bottom-width: 3rem;
+        border-radius: 1.25rem 2.5rem 2.5rem .625rem;
+        box-shadow: 0 0 15px $scheme-yellow-light-a4;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__content-inner {
+        min-height: 400px;
+        box-shadow: 0 0 10px $scheme-yellow-light-a4;
+        border-radius: .4rem 1.2rem .5rem .3125rem;
+        // padding: 5%;
+        position: relative;
+    }
+
+    &__items {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    &__item {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        padding-top: .5rem;
+        background-color: $scheme-black-a4;
+        height: 4rem;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: $scheme-yellow;
+        border-style: solid;
+        border-color: $scheme-yellow;
+        border-radius:  3rem;
+        box-shadow: 0 0 15px $scheme-yellow-light-a7;
+        &:hover {
+            color: $scheme-black;
+            background-color: $scheme-yellow-a7;
+        }
+        
+    }
+
+    &__back-button {
+        text-align: center;
+        display: block;
+        width: 20%;
+        height: 2.7rem;
+        font-weight: bold;
+        margin-top: -3.2rem;
+        margin-left: auto;
+        margin-right: 25%;
+        text-decoration: none;
+        padding-top: .3rem;
+        font-size: 2.1rem;
+        font-family: sans-serif;
+        color: $scheme-white;
+        background-color: $scheme-purple-dark-a7;
+        border-style: solid;
+        border-color: $scheme-white;
+        box-shadow: 0 0 10px $scheme-grey-light;
+        border-radius: .625rem;
+        &:hover {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+        }
+    }
+
+}
