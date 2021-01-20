@@ -90,9 +90,16 @@
         border-color: $scheme-white;
         box-shadow: 0 0 10px $scheme-grey-light;
         border-radius: .625rem;
+        
         &:hover {
             color: $scheme-purple-dark;
             background-color: $scheme-grey-light-a7;
+        }
+
+        &:focus {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+            outline: none;
         }
     }
 

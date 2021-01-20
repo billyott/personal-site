@@ -46,7 +46,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 50%;
+        width: 75%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
@@ -57,7 +57,7 @@
         margin: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         padding-top: .5rem;
         background-color: $scheme-black-a4;
         height: 4rem;
@@ -70,9 +70,16 @@
         border-color: $scheme-yellow;
         border-radius:  3rem;
         box-shadow: 0 0 15px $scheme-yellow-light-a7;
+        
         &:hover {
             color: $scheme-black;
             background-color: $scheme-yellow-a7;
+        }
+
+        &:focus {
+            color: $scheme-black;
+            background-color: $scheme-yellow-a7;
+            outline: none;
         }
         
     }
@@ -96,9 +103,16 @@
         border-color: $scheme-white;
         box-shadow: 0 0 10px $scheme-grey-light;
         border-radius: .625rem;
+        
         &:hover {
             color: $scheme-purple-dark;
             background-color: $scheme-grey-light-a7;
+        }
+
+        &:focus {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+            outline: none;
         }
     }
 

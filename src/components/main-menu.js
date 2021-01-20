@@ -17,7 +17,7 @@ class MainMenu extends React.Component {
         } else if (this.state.selected === "blog") {
             return('./assets/homepage-background.png')
         }  else if (this.state.selected === "contact") {
-            return('./assets/homepage-background.png')
+            return('./assets/contact-preview.png')
         } else {
             return('./assets/homepage-background.png')
         }

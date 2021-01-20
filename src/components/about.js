@@ -13,9 +13,17 @@ function About() {
                     <img className="about__image" src="./assets/self-portrait.png" alt="cartoon version of Billy Ott" />
                     <div className="about__text-container">
                         <div className="about__subheader">Billy Ott</div>
-                        <p className="about__bio">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                        <div className="about__bio">
+                            <ul>
+                                <li>LOCATION: New York City, NY, USA</li>
+                                <li>BIRTHDAY: 05.18.19XX</li>
+                                <li>BLOOD TYPE: A+</li>
+                                <li>MB: ISFJ</li>
+                            </ul>
+                            <p>
+                            bio: Hi! I'm a Full-stack Software Developer with a focus in React.js and Ruby on Rails. I'm also a former digital marketer who dabbled in data analysis, data visualization, team-management, and building things from scratch. In my spare time, I'm usually playing video games, cooking, or learning something new.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
