@@ -1,0 +1,86 @@
+@import '../styling-vars.scss';
+
+.about {
+    background-color: $scheme-black;
+    margin-bottom: 5%;
+
+    &__header {
+        margin-top: 5%;
+        margin-left: 15%;
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+        color: $scheme-grey-light-a7;
+    }
+
+    &__content-outer {
+        border-color: $scheme-green-a4;
+        border-style: solid;
+        border-top-width: 1rem;
+        border-left-width: 1.2rem;
+        border-right-width: 1.2rem;
+        border-bottom-width: 3rem;
+        border-radius: 1.25rem 2.5rem 2.5rem .625rem;
+        box-shadow: 0 0 15px $scheme-green-light-a7;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__content-inner {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0 10px $scheme-green-light-a4;
+        border-radius: 1rem 1.2rem .5rem .3125rem;
+        padding: 5%;
+    }
+
+    &__image {
+        width: 300px;
+        height: 300px;
+        opacity: 70%;
+        padding-right: 50px;
+        margin: auto;
+    }
+
+    &__text-container {
+        margin-left: auto;
+        max-width: 60%;
+    }
+
+    &__subheader {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: $scheme-yellow;
+        transform: skewY(-4deg);
+    }
+
+    &__bio {
+        color: $scheme-white;
+        justify-content: left;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+    }
+
+    &__back-button {
+        text-align: center;
+        display: block;
+        width: 20%;
+        height: 3.5rem;
+        font-weight: bold;
+        margin-top: -3.2rem;
+        margin-left: auto;
+        margin-right: 25%;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        color: $scheme-white;
+        background-color: $scheme-purple-dark-a7;
+        border-style: solid;
+        border-color: $scheme-white;
+        box-shadow: 0 0 10px $scheme-grey-light;
+        border-radius: .625rem;
+    }
+
+}

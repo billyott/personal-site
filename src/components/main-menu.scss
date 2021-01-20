@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: $default-background;
+    background-color: $scheme-purple-dark;
     color: white;
 
     &__header {
@@ -18,7 +18,7 @@
         font-size: 3rem;
         font-weight: bolder;
         font-style: italic;
-        color: rgba(255, 255, 255, 0.45);
+        color: $scheme-grey-dark-a7;
     }
 
     &__menu-content {
@@ -27,19 +27,19 @@
         width: 75%;
         margin-left: auto;
         margin-right: auto;
-        border-color: $main-menu-border;
+        border-color: $scheme-purple-dark-a4;
         border-style: solid;
         border-top-width: 1rem;
         border-left-width: 1.2rem;
         border-right-width: 1.2rem;
         border-bottom-width: 3rem;
         border-radius: 1.25rem 2.5rem 2.5rem .625rem;
-        box-shadow: 0 0 5px $main-menu-border-outline;
+        box-shadow: 0 0 5px $scheme-purple-light-a4;
     }
 
     &__links-container {
         border-radius: .4rem 1.2rem .5rem .3125rem;
-        box-shadow: 0 0 5px $main-menu-border-outline; 
+        box-shadow: 0 0 5px $scheme-purple-light-a4;
     }
 
     &__links {
@@ -51,28 +51,28 @@
     &__link {
         display: block;
         text-align: center;
-        background-color: $link-background-color;
+        background-color: $scheme-black-a4;
         width: 50%;
         height: 4rem;
         text-decoration: none;
         font-size: 3rem;
         font-weight: bold;
         font-family: sans-serif;
-        color: $start-icon-text;
+        color: $scheme-yellow;
         border-style: solid;
-        border-color: $start-icon-text;
+        border-color: $scheme-yellow;
         border-radius:  3rem .625rem 3rem .625rem;
-        box-shadow: 0 0 15px $link-border-color; 
+        box-shadow: 0 0 15px $scheme-yellow-light-a7; 
 
         &:hover {
-            color: black;
-            background-color: $start-icon-text;
+            color: $scheme-black;
+            background-color: $scheme-yellow;
         }
 
         &:focus {
             outline: none;
-            color: black;
-            background-color: $start-icon-text;
+            color: $scheme-black;
+            background-color: $scheme-yellow;
         }
 
         &--opt1 {
@@ -102,12 +102,12 @@
         opacity: 40%;
         border-radius: 1rem;
         transform: skewY(4deg);
-        border-color: $prev-image-border;
+        border-color: $scheme-green-a4;
         border-style: solid;
         border-width: .2rem;
         border-radius: 1.25rem;
-        box-shadow: 0 0 5px $prev-image-border-outline;
-        background-color: $prev-image-background;
+        box-shadow: 0 0 5px $scheme-green-light-a4;
+        background-color: $scheme-green-a4;
     }
 
     &__prev-text {
@@ -120,11 +120,11 @@
         margin-right: auto;
         font-size: 2.5rem;
         font-family: sans-serif;
-        color: white;
-        background-color: $link-background-color;
+        color: $scheme-white;
+        background-color: $scheme-black-a4;
         border-style: solid;
-        border-color: white;
-        box-shadow: 0 0 10px blanchedalmond;
+        border-color: $scheme-white;
+        box-shadow: 0 0 10px $scheme-grey-light-a4;
         border-radius: .625rem;
     }
 

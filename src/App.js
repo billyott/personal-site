@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Homepage from './components/homepage';
 import MainMenu from './components/main-menu';
+import About from './components/about';
 import './app.scss';
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
         <Switch>
           <Route path="/main-menu">
             <MainMenu />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/">
             <Homepage />

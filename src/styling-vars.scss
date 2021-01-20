@@ -1,9 +1,51 @@
-$bars-background: rgba(0, 0, 0, 0.7);
-$header-outline: rgba(185, 185, 185, 0.747);
+// scheme colors
+$scheme-purple: rgb(130, 112, 196);
+$scheme-purple-dark: rgb(42, 32, 69);
+$scheme-purple-light: rgb(182, 171, 219);
+$scheme-yellow: rgb(248, 199, 22);
+$scheme-yellow-light: rgb(248, 219, 112);
+$scheme-blue: rgb(33,49,141);
+$scheme-green: rgb(33, 126, 98);
+$scheme-green-light: rgb(171, 219, 205);
+$scheme-white: rgb(255, 255, 255);
+$scheme-black: rgb(0, 0, 0);
+$scheme-grey: rgb(145, 143, 143);
+$scheme-grey-dark: rgb(148, 148, 148);
+$scheme-grey-light: rgb(224, 224, 224);
+
+// scheme colors a7
+$scheme-purple-a7: rgba(28, 16, 75, 0.7);
+$scheme-purple-dark-a7: rgba(42, 32, 69, .7);
+$scheme-purple-light-a7: rgba(182, 171, 219, .7);
+$scheme-yellow-a7: rgba(248, 199, 22, .7);
+$scheme-yellow-light-a7: rgba(248, 219, 112, .7);
+$scheme-blue-a7: rgba(33, 49, 141, .7);
+$scheme-green-a7: rgba(33, 126, 98, .7);
+$scheme-green-light-a7: rgba(171, 219, 205, .7);
+$scheme-white-a7: rgba(255, 255, 255, .7);
+$scheme-black-a7: rgba(0, 0, 0, .7);
+$scheme-grey-a7: rgba(145, 143, 143, .7);
+$scheme-grey-dark-a7: rgba(148, 148, 148, .7);
+$scheme-grey-light-a7: rgba(224, 224, 224, .7);
+
+// scheme colors a4
+$scheme-purple-a4: rgba(130, 112, 196, .4);
+$scheme-purple-dark-a4: rgba(42, 32, 69, .4);
+$scheme-purple-light-a4: rgba(182, 171, 219, .4);
+$scheme-yellow-a4: rgba(248, 199, 22, .4);
+$scheme-yellow-light-a4: rgba(248, 219, 112, .4);
+$scheme-blue-a4: rgba(33, 49, 141, .4);
+$scheme-green-a4: rgba(33, 126, 98, .4);
+$scheme-green-light-a4: rgba(171, 219, 205, .4);
+$scheme-white-a4: rgba(255, 255, 255, .4);
+$scheme-black-a4: rgba(0, 0, 0, .4);
+$scheme-grey-a4: rgba(145, 143, 143, .4);
+$scheme-grey-dark-a4: rgba(148, 148, 148, .4);
+$scheme-grey-light-a4: rgba(224, 224, 224, .4);
+
+//backgrounds
+$scheme-black-a7: rgba(0, 0, 0, 0.7);
 $header-text: rgba(36, 3, 3, 0.9);
-$start-icon-text: #f8c617;
-$default-background: #2a2045;
-$main-menu-border: rgba(130, 112, 196, 0.4);
 $main-menu-border-outline: rgb(182, 171, 219);
 $link-background-color: rgba(16, 15, 29, 0.8);
 $link-border-color: #f8db70dc;
