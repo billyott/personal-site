@@ -112,8 +112,16 @@
 
     &__footer {
         padding-top: 30px;
+    }
+
+    &__footer-link {
+        color: $scheme-white;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 1.2rem;
+        margin: 0 1rem;
+        &:hover {
+            color: $scheme-yellow;
+        }
     }
 
 }
