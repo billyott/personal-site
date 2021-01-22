@@ -17,21 +17,17 @@ class Portfolio extends React.Component {
                     <NavLink to="/main-menu" className="portfolio__back-button">GO BACK</NavLink>
                 </div>
                 <div className="portfolio__projects-container">
-                    <div className="portfolio__project">
-                        <img className="portfolio__project-prev-img" src="./assets/contact-preview.png" alt="project preview"/>
-                        <div className="portfolio__project-title">SCRAMBLED</div>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/scrambled-prev.png')`}}>
+                        <button className="portfolio__project-title">SCRAMBLED</button>
                     </div>
-                    <div className="portfolio__project">
-                        <img className="portfolio__project-prev-img" src="./assets/contact-preview.png" alt="project preview"/>
-                        <div className="portfolio__project-title">COMPLETIONIST</div>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
+                        <button className="portfolio__project-title">COMPLETIONIST</button>
                     </div>
-                    <div className="portfolio__project">
-                        <img className="portfolio__project-prev-img" src="./assets/contact-preview.png" alt="project preview"/>
-                        <div className="portfolio__project-title">FLASH FLIP</div>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
+                        <button className="portfolio__project-title">FLASH FLIP</button>
                     </div>
-                    <div className="portfolio__project">
-                        <img className="portfolio__project-prev-img" src="./assets/contact-preview.png" alt="project preview"/>
-                        <div className="portfolio__project-title">12MONTHS</div>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
+                        <button className="portfolio__project-title">12MONTHS</button>
                     </div>
                 </div>
                 <div className="portfolio__prev-container">

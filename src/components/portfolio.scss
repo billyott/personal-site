@@ -48,12 +48,41 @@
     }
 
     &__project {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         margin: 1rem;
+        border-radius: 1rem;
+        height: 13rem;
+        width: 13rem;
+        border-style: solid;
+        border-color: $scheme-white-a7;
+        box-shadow: 0 0 10px $scheme-white-a4;
     }
 
-    &__project-prev-img {
-        width: 200px;
-        height: 200px;
+    &__project-title {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $scheme-white;
+        background-color: $scheme-black;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0 0 1rem 1rem;
+        &:hover {
+            font-size: 1.4rem;
+        }
+
+        &:focus {
+            background-color: $scheme-blue;
+            outline: none;
+        }
     }
 
 
