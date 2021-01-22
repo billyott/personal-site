@@ -25,13 +25,13 @@ class MainMenu extends React.Component {
 
     generatePrevText = () => {
         if (this.state.selected === "portfolio") {
-            return("My projects!")
+            return("Dev projects!")
         } else if (this.state.selected === "about") {
-            return("The story so far!")
+            return("Current stats!")
         } else if (this.state.selected === "blog") {
-            return("My thoughts!")
+            return("Some thoughts!")
         }  else if (this.state.selected === "contact") {
-            return("Get in touch!")
+            return("Comms methods!")
         } else {
             return ("Make a selection!")
         }

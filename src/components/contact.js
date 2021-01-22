@@ -11,8 +11,9 @@ function Contact() {
             <div className="contact__content-outer">
                 <div className="contact__content-inner">
                     <div className="contact__items">
-                        <a className="contact__item" href="mailto:willrichott@gmail.com" target="_blank">Email</a>
-                        <a className="contact__item" href="https://www.linkedin.com/in/billyott" target="_blank">LinkedIn</a>
+                        <a className="contact__item" href="https://github.com/billyott" target="_blank" rel="noreferrer">GitHub</a>
+                        <a className="contact__item" href="https://www.linkedin.com/in/billyott" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a className="contact__item" href="https://my.playstation.com/profile/zomgbill" target="_blank" rel="noreferrer">PSN</a>
                     </div>
                 </div>
             </div>

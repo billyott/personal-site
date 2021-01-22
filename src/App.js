@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Homepage from './components/homepage';
 import MainMenu from './components/main-menu';
+import Portfolio from './components/portfolio';
 import About from './components/about';
 import Contact from './components/contact';
 import './app.scss';
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route path="/main-menu">
             <MainMenu />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
           </Route>
           <Route path="/about">
             <About />
