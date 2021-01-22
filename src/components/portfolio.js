@@ -9,6 +9,61 @@ class Portfolio extends React.Component {
         selected: "none"
     }
 
+    updateSeletedTwelveMonths = () => {
+        this.setState({selected: "12months"})
+    }
+
+    updateSeletedFlashFlip = () => {
+        this.setState({selected: "flash flip"})
+    }
+
+    updateSeletedCompletionist = () => {
+        this.setState({selected: "completionist"})
+    }
+
+    updateSeletedScrambled = () => {
+        this.setState({selected: "scrambled"})
+    }
+
+    generateDataForSelection = () => {
+        if (this.state.selected === "12months") {
+            return({
+                title: "12MONTHS",
+                prevImg: "./assets/scrambled-prev.png",
+                stack: "React.js, Ruby on Rails, React Redux",
+                desc: "A minimalist journaling app that allows users to jot down notes, track habits, and monitor mood and sleep trends.",
+                github: "https://github.com/billyott/twelve-months-client"
+            })
+        } else if (this.state.selected === "flash flip") {
+            return({
+                title: "Flash Flip",
+                prevImg: "./assets/scrambled-prev.png",
+                stack: "React.js, Ruby on Rails",
+                desc: "A flash card application to help with studying any topic. Includes a 'game' feature to help with testing.",
+                github: "https://github.com/billyott/flash-flip-client"
+            })
+        } else if (this.state.selected === "completionist") {
+            return({
+                title: "Completionist",
+                prevImg: "./assets/scrambled-prev.png",
+                stack: "JavaScript, Ruby on Rails",
+                desc: "A basic task tracker.",
+                github: "https://github.com/bfeldman/completionist-frontend"
+            })
+        }  else if (this.state.selected === "scrambled") {
+            return({
+                title: "Scrambled",
+                prevImg: "./assets/scrambled-prev.png",
+                stack: "Ruby",
+                desc: "A CLI word scramble game written completely in Ruby.",
+                github: "https://github.com/billyott/scrambled"
+            })
+        } else {
+            return({})
+        }
+    }
+    
+
     render() {
         return (
             <div className="portfolio" style={{backgroundImage: `url('./assets/about-background.png')`}}>
@@ -18,31 +73,33 @@ class Portfolio extends React.Component {
                 </div>
                 <div className="portfolio__projects-container">
                     <div className="portfolio__project" style={{backgroundImage: `url('./assets/scrambled-prev.png')`}}>
-                        <button className="portfolio__project-title">SCRAMBLED</button>
+                        <button className="portfolio__project-title" onFocus={this.updateSeletedTwelveMonths}>12MONTHS</button>
                     </div>
-                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
-                        <button className="portfolio__project-title">COMPLETIONIST</button>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/scrambled-prev.png')`}}>
+                        <button className="portfolio__project-title" onFocus={this.updateSeletedFlashFlip}>FLASH FLIP</button>
                     </div>
-                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
-                        <button className="portfolio__project-title">FLASH FLIP</button>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/scrambled-prev.png')`}}>
+                        <button className="portfolio__project-title" onFocus={this.updateSeletedCompletionist}>COMPLETIONIST</button>
                     </div>
-                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/contact-preview.png')`}}>
-                        <button className="portfolio__project-title">12MONTHS</button>
-                    </div>
-                </div>
-                <div className="portfolio__prev-container">
-                    <div className="portfolio__prev-details">
-                        <div className="portfolio__prev-prev-img"></div>
-                        <div className="portfolio__prev-title"></div>
-                        <div className="portfolio__prev-stack"></div>
-                        <div className="portfolio__prev-desc"></div>
-                        <div className="portfolio__prev-github"></div>
-                    </div>
-                    <div className="portfolio__prev-demo">
-                        <div className="portfolio__prev-demo-title"></div>
-                        <div className="portfolio__prev-demo-vid"></div>
+                    <div className="portfolio__project" style={{backgroundImage: `url('./assets/scrambled-prev.png')`}}>
+                        <button className="portfolio__project-title" onFocus={this.updateSeletedScrambled}>SCRAMBLED</button>
                     </div>
                 </div>
+                {this.state.selected === "none" ? null :
+                    <div className="portfolio__prev-container">
+                        <div className="portfolio__prev-details">
+                            <div className="portfolio__prev-title">{this.generateDataForSelection()['title']}</div>
+                            <div className="portfolio__prev-stack">{this.generateDataForSelection()['stack']}</div>
+                            <div className="portfolio__prev-desc">{this.generateDataForSelection()['desc']}</div>
+                            <a className="portfolio__prev-github" href={this.generateDataForSelection()['github']} target="_blank" rel="noreferrer">GitHub</a>
+                            <img src={this.generateDataForSelection()['prevImg']} className="portfolio__prev-prev-img"></img>
+                        </div>
+                        {/* <div className="portfolio__prev-demo">
+                            <div className="portfolio__prev-demo-title"></div>
+                            <div className="portfolio__prev-demo-vid"></div>
+                        </div> */}
+                    </div>
+                }
             </div>
         );
     }

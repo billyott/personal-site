@@ -36,6 +36,32 @@
         right: 3rem;
         bottom: .5rem;
         font-size: 1.5rem;
+        text-align: center;
+        display: block;
+        width: 10rem;
+        height: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding: .3rem 0;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        color: $scheme-white;
+        background-color: $scheme-purple-dark-a7;
+        border-style: solid;
+        border-color: $scheme-white;
+        box-shadow: 0 0 10px $scheme-grey-light;
+        border-radius: .625rem;
+        
+        &:hover {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+        }
+
+        &:focus {
+            color: $scheme-purple-dark;
+            background-color: $scheme-grey-light-a7;
+            outline: none;
+        }
     }
 
     &__projects-container {
@@ -84,6 +110,8 @@
             outline: none;
         }
     }
+
+    
 
 
 }
