@@ -11,7 +11,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className="portfolio">
+            <div className="portfolio" style={{backgroundImage: `url('./assets/about-background.png')`}}>
                 <div className="portfolio__header-container">
                     <div className="portfolio__header">PORTFOLIO</div>
                     <NavLink to="/main-menu" className="portfolio__back-button">GO BACK</NavLink>

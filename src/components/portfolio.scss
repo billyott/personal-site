@@ -1,0 +1,60 @@
+@import '../styling-vars.scss';
+
+.portfolio {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $scheme-black;
+
+
+    &__header-container {
+        background-color: $scheme-grey-a4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    &__header {
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+        display: inline-block;
+    }
+
+    &__back-button {
+        position: absolute;
+        right: 3rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+    }
+
+    &__projects-container {
+        padding: 3rem;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__project {
+        margin: 1rem;
+    }
+
+    &__project-prev-img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+}
