@@ -11,7 +11,7 @@ class MainMenu extends React.Component {
 
     generatePrevVisual = () => {
         if (this.state.selected === "portfolio") {
-            return('./assets/homepage-background.png')
+            return('./assets/portfolio-preview.png')
         } else if (this.state.selected === "about") {
             return('./assets/about-preview.png')
         } else if (this.state.selected === "blog") {
