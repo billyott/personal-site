@@ -89,11 +89,13 @@ class Portfolio extends React.Component {
                     <div className="portfolio__prev-container">
                         <div className="portfolio__prev-details">
                             <div className="portfolio__prev-title">{this.generateDataForSelection()['title']}</div>
-                            <div className="portfolio__prev-stack">{this.generateDataForSelection()['stack']}</div>
-                            <div className="portfolio__prev-desc">{this.generateDataForSelection()['desc']}</div>
-                            <a className="portfolio__prev-github" href={this.generateDataForSelection()['github']} target="_blank" rel="noreferrer">GitHub</a>
-                            <img src={this.generateDataForSelection()['prevImg']} className="portfolio__prev-prev-img" alt="screenshot of project ui"></img>
+                            <div className="portfolio__prev-desc">⚬ {this.generateDataForSelection()['desc']}</div>
+                            <div className="portfolio__prev-stack">⚬ built in {this.generateDataForSelection()['stack']}</div>
+                            <div className="portfolio__prev-github-container">
+                                <a className="portfolio__prev-github" href={this.generateDataForSelection()['github']} target="_blank" rel="noreferrer">GitHub Repo</a>
+                            </div>
                         </div>
+                        <img src={this.generateDataForSelection()['prevImg']} className="portfolio__prev-prev-img" alt="screenshot of project ui"></img>
                         {/* <div className="portfolio__prev-demo">
                             <div className="portfolio__prev-demo-title"></div>
                             <div className="portfolio__prev-demo-vid"></div>
