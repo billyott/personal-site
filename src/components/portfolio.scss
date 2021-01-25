@@ -111,7 +111,26 @@
         }
     }
 
-    
+    &__prev-details {
+        color: $scheme-white;
+    }
+
+    &__prev-title {
+        font-size: 2rem;
+    }
+
+    &__prev-desc {
+        font-size: 1rem;
+    }
+
+    &__prev-stack {
+
+    }
+
+    &__prev-img {
+        height: 100px;
+        width: 100px;
+    }    
 
 
 }
