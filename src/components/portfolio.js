@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ReactPlayer from "react-player";
 
 import './portfolio.scss';
 
@@ -32,7 +33,8 @@ class Portfolio extends React.Component {
                 prevImg: "./assets/twelvemonths-preview.png",
                 stack: "React.js, Ruby on Rails, React Redux",
                 desc: "A minimalist journaling app that allows users to jot down notes, track habits, and monitor mood and sleep trends.",
-                github: "https://github.com/billyott/twelve-months-client"
+                github: "https://github.com/billyott/twelve-months-client",
+                youtube: "https://www.youtube.com/watch?v=Pwc1hHV852g"
             })
         } else if (this.state.selected === "flash flip") {
             return({
@@ -40,7 +42,8 @@ class Portfolio extends React.Component {
                 prevImg: "./assets/flashflip-preview.png",
                 stack: "React.js, Ruby on Rails",
                 desc: "A flash card application to help with studying any topic. Includes a 'game' feature to help with testing.",
-                github: "https://github.com/billyott/flash-flip-client"
+                github: "https://github.com/billyott/flash-flip-client",
+                youtube: "https://www.youtube.com/watch?v=KvWOtRugWLg"
             })
         } else if (this.state.selected === "completionist") {
             return({
@@ -48,7 +51,8 @@ class Portfolio extends React.Component {
                 prevImg: "./assets/completionist-preview.png",
                 stack: "JavaScript, Ruby on Rails",
                 desc: "A basic task tracker.",
-                github: "https://github.com/bfeldman/completionist-frontend"
+                github: "https://github.com/bfeldman/completionist-frontend",
+                youtube: "https://www.youtube.com/watch?v=hXr_y20hb7g"
             })
         }  else if (this.state.selected === "scrambled") {
             return({
@@ -56,7 +60,8 @@ class Portfolio extends React.Component {
                 prevImg: "./assets/scrambled-preview.png",
                 stack: "Ruby",
                 desc: "A CLI word scramble game written completely in Ruby.",
-                github: "https://github.com/billyott/scrambled"
+                github: "https://github.com/billyott/scrambled",
+                youtube: "https://www.youtube.com/watch?v=K8k6POBPFfU"
             })
         } else {
             return({})
@@ -95,7 +100,10 @@ class Portfolio extends React.Component {
                                 <a className="portfolio__prev-github" href={this.generateDataForSelection()['github']} target="_blank" rel="noreferrer">GitHub Repo</a>
                             </div>
                         </div>
-                        <img src={this.generateDataForSelection()['prevImg']} className="portfolio__prev-prev-img" alt="screenshot of project ui"></img>
+                        <div className="portfolio__player-container">
+                            <ReactPlayer className='portfolio__react-player' url={this.generateDataForSelection()['youtube']} width="100%" height="100%"/>
+                        </div>
+                        {/* <img src={this.generateDataForSelection()['prevImg']} className="portfolio__prev-prev-img" alt="screenshot of project ui"></img> */}
                         {/* <div className="portfolio__prev-demo">
                             <div className="portfolio__prev-demo-title"></div>
                             <div className="portfolio__prev-demo-vid"></div>
