@@ -11,7 +11,7 @@ import './app.scss';
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Switch>
           <Route path="/main-menu">
             <MainMenu />
