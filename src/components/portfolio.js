@@ -56,9 +56,9 @@ class Portfolio extends React.Component {
                 <div className="portfolio__projects-container">
                     {this.generatePreviewIcons()}
                 </div>
-                {this.selectedProject ? null :
-                    <div className="portfolio__prev-container">
-                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--prev" onClick={this.toggleBack}>prev</button>
+                <div className="portfolio__prev-container">
+                    <button className="portfolio__mobile-toggle portfolio__mobile-toggle--prev" onClick={this.toggleBack}>&laquo;</button>
+                    <div className="portfolio__prev-container-content">
                         <div className="portfolio__prev-details">
                             <div className="portfolio__prev-title">{this.state.selectedProject['title']}</div>
                             <div className="portfolio__prev-desc">⚬ {this.state.selectedProject['desc']}</div>
@@ -70,9 +70,9 @@ class Portfolio extends React.Component {
                         <div className="portfolio__player-container">
                             <ReactPlayer className='portfolio__react-player' url={this.state.selectedProject['youtube']} width="100%" height="100%"/>
                         </div>
-                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--next" onClick={this.toggleNext}>next</button>
                     </div>
-                }
+                    <button className="portfolio__mobile-toggle portfolio__mobile-toggle--next" onClick={this.toggleNext}>&raquo;</button>
+                </div>
             </div>
         );
     }
