@@ -32,7 +32,7 @@
     &__header-container {
         font-family: sans-serif;
         font-weight: bolder;
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         color: $header-text;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: $scheme-grey-light;
@@ -42,14 +42,21 @@
         -ms-transform:scale(1.18,1.1); /* IE 9 */
         -o-transform:scale(1.18,1.1); /* Opera */
         transform:scale(1.18,1.1); /* W3C */
-        @media (max-width: 375px){
-            -webkit-text-stroke-width: 1px;
-            font-size: 3rem;
+       
+        @media (max-width: 768px){
+            font-size: 4rem;
+            -webkit-text-stroke-width: .8px;
         }
+
+        @media (max-width: 480px){
+            font-size: 2.5rem;
+            -webkit-text-stroke-width: .8px;
+        }
+
     }
 
     &__header::first-letter {
-        font-size: 1.2em
+        font-size: 1.2em;
     }
 
     &__sub-header {
@@ -111,7 +118,19 @@
     }
 
     &__footer {
+        // display: flex;
+        // width: 75%;
+        // margin: 0 auto;
         padding-top: 30px;
+    }
+
+    &__footer-link-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        line-height: 200%;
     }
 
     &__footer-link {
@@ -123,5 +142,20 @@
             color: $scheme-yellow;
         }
     }
+
+    // @media (max-width: 480px) {
+
+    // }
+
+
+    // //anding
+    // @media (orientation: landscape) and (max-width: 500px) {
+
+    // }
+
+    // //oring
+    // @media (orientation: landscape), (max-width: 500px) {
+
+    // }
 
 }

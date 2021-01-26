@@ -16,7 +16,7 @@ class Homepage extends React.Component {
                             <div className="homepage__header">FULL-STACK</div>
                             <div className="homepage__header">WEB DEVELOPER</div>
                         </div>
-                        <div className="homepage__sub-header">BILL OTT</div>
+                        <div className="homepage__sub-header">BILLY OTT</div>
                     </div>
                     <div className="homepage__start-container">
                         <div className="homepage__start-icon"></div>
@@ -25,7 +25,7 @@ class Homepage extends React.Component {
                 </div>
                 <div className="homepage__bottom-area">
                     <div className="homepage__footer">
-                        <div>
+                        <div className="homepage__footer-link-container">
                             <NavLink to="/main-menu" className="homepage__footer-link">main menu</NavLink>/ 
                             <NavLink to="/portfolio" className="homepage__footer-link">portfolio</NavLink>/ 
                             <NavLink to="/about" className="homepage__footer-link">about</NavLink>/ 
