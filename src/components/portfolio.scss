@@ -26,8 +26,16 @@
         font-style: italic;
         display: inline-block;
 
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 480px) {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
         }
     }
 
@@ -49,7 +57,7 @@
         background-color: $scheme-purple-dark-a7;
         border-style: solid;
         border-color: $scheme-white;
-        box-shadow: 0 0 10px $scheme-grey-light;
+        box-shadow: 0 0 5px $scheme-grey-light;
         border-radius: .625rem;
         
         &:hover {
@@ -63,13 +71,22 @@
             outline: none;
         }
 
+        @media (max-width: 768px) {
+            font-size: .9rem;
+            height: 1rem;
+            width: 5rem;
+            right: .5rem;
+            bottom: .7rem;
+            box-shadow: 0 0 5px $scheme-grey-light;
+        }
+
         @media (max-width: 480px) {
-            font-size: 1rem;
-            padding-top: .6rem;
-            height: 1.3rem;
-            width: 7rem;
-            right: 2rem;
-            bottom: .3rem;
+            font-size: .9rem;
+            height: 1rem;
+            width: 5rem;
+            right: .5rem;
+            bottom: .7rem;
+            box-shadow: 0 0 5px $scheme-grey-light;
         }
     }
 
@@ -96,8 +113,8 @@
         background-position: center;
         margin: 1rem;
         border-radius: 1rem;
-        height: 13rem;
-        width: 13rem;
+        height: 10rem;
+        width: 10rem;
         border-style: solid;
         border-color: $scheme-white-a7;
         box-shadow: 0 0 10px $scheme-white-a4;
@@ -138,7 +155,6 @@
 
         @media (max-width: 480px) {
             max-height: 40%;
-            width: 100%;
             padding-bottom: 0;
         }
     }
@@ -172,7 +188,7 @@
 
 
         @media (max-width: 480px) {
-            width: 100%;
+            width: 80%;
             font-size: 1rem;
             padding: 0;
             margin-top: 2rem;
@@ -198,24 +214,37 @@
 
     &__prev-desc {
         margin-top: 1rem;
+
+        @media (max-width: 480px) {
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
     }
 
     &__prev-stack {
         margin-top: 1rem;
+
+        @media (max-width: 480px) {
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
     }
 
     &__player-container {
         height: 100%;
+        max-height: 400px;
         width: 65%;
 
         @media (max-width: 768px) {
-            height: 60%;
+            height: 40%;
+            width: 100%;
+            max-width: 400px;
             margin-top: 3rem;
         }
 
         @media (max-width: 480px) {
             position: fixed;
-            height: 45%;
+            height: 40%;
             width: auto;
             bottom: 60px;
             right: 10px;
@@ -253,10 +282,11 @@
         }
 
         @media (max-width: 480px) {
+            // height: 2.5rem;
             width: 10%;
             height: 3rem;
-            width: 4rem;
-            margin: auto 2rem;
+            font-size: 1.5rem;
+            margin: auto 1rem;
         }
     }
 
