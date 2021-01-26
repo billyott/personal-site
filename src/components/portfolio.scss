@@ -198,6 +198,10 @@
     &__prev-github-container {
         text-align: center;
         margin-top: 2rem;
+        @media (max-width: 480px) {
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
     }
 
     &__prev-github {
@@ -246,7 +250,7 @@
             position: fixed;
             height: 40%;
             width: auto;
-            bottom: 60px;
+            bottom: 40px;
             right: 10px;
             left: 10px;
             padding: 0 2rem;
@@ -257,6 +261,7 @@
         font-size: 2rem;
         border-radius: 50%;
         border-style: none;
+        text-align: center;
         height: 5rem;
         width: 6rem;
         margin: auto 3rem;
