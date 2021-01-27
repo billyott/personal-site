@@ -22,12 +22,12 @@
 
         @media (max-width: 768px) {
             font-size: 2.5rem;
-            margin-left: 40px;
+            margin-left: 100px;
         }
 
         @media (max-width: 480px) {
             font-size: 2.5rem;
-            margin-left: 40px;
+            margin-left: 50px;
         }
     }
 
@@ -60,6 +60,10 @@
         padding-right: 50px;
         margin: auto;
 
+        @media (max-width: 768px) {
+            display: none;
+        }
+
         @media (max-width: 480px) {
             display: none;
         }
@@ -68,6 +72,11 @@
     &__text-container {
         margin-left: auto;
         max-width: 60%;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            margin-left: none;
+        }
 
         @media (max-width: 480px) {
             max-width: 100%;
@@ -83,6 +92,10 @@
         color: $scheme-yellow;
         transform: skewY(-4deg);
 
+        @media (max-width: 768px) {
+            font-size: 2.6rem;
+        }
+
         @media (max-width: 480px) {
             font-size: 2.2rem;
         }
@@ -93,6 +106,11 @@
         justify-content: left;
         font-size: 1.5rem;
         font-family: sans-serif;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 130%;
+        }
 
         @media (max-width: 480px) {
             font-size: 1rem;
@@ -129,6 +147,16 @@
             color: $scheme-purple-dark;
             background-color: $scheme-grey-light-a7;
             outline: none;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            width: 30%;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 2.2rem;
+            margin-top: -3.1rem;
         }
 
         @media (max-width: 480px) {
