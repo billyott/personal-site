@@ -74,6 +74,9 @@ class MainMenu extends React.Component {
     render() {
         return (
             <div className="main-menu" style={{backgroundImage: `url('./assets/mainmenu-background.png')`}}>
+                <NavLink to="/">
+                    <img className="main-menu__icon" src='./billyotticon.png' alt="pixel sprout icon"/>
+                </NavLink>
                 <div className="main-menu__header">MAIN MENU</div>
                 <div className={`main-menu__menu-content main-menu__menu-content${this.updateBorderColor()}`}>
                     <div className="main-menu__links-container">

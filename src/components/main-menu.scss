@@ -13,6 +13,12 @@
     color: white;
     overflow-y: auto;
 
+    &__icon {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+    }
+
     &__header {
         margin-top: 5%;
         margin-left: 15%;
