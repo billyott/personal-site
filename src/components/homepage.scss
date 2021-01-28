@@ -43,13 +43,13 @@
         -o-transform:scale(1.18,1.1); /* Opera */
         transform:scale(1.18,1.1); /* W3C */
        
-        @media (max-width: 768px){
+        @media (max-width: $tablet){
             margin: 0 2rem;
             font-size: 2.5rem;
             -webkit-text-stroke-width: .8px;
         }
 
-        @media (max-width: 480px){
+        @media (max-width: $mobile){
             margin: 0 2rem;
             font-size: 2rem;
             -webkit-text-stroke-width: .8px;
@@ -68,7 +68,7 @@
         font-weight: bolder;
         text-shadow: 0 0 6px $scheme-grey-dark;
 
-        @media (max-width: 480px){
+        @media (max-width: $mobile){
             font-size: 2.5rem;
         }
     }
@@ -109,7 +109,7 @@
         color: $scheme-yellow;
         text-decoration: none;
 
-        @media (max-width: 480px){
+        @media (max-width: $mobile){
             font-size: 1.5rem;
         }
     }
@@ -133,7 +133,7 @@
         // margin: 0 auto;
         padding-top: 30px;
 
-        @media (max-width: 480px){
+        @media (max-width: $mobile){
             padding-top: 10px;
         }
     }

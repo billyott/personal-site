@@ -26,13 +26,13 @@
         font-style: italic;
         display: inline-block;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             font-size: 2rem;
             margin-left: 10px;
             margin-bottom: 10px;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             font-size: 2rem;
             margin-left: 10px;
             margin-bottom: 10px;
@@ -71,7 +71,7 @@
             outline: none;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             font-size: .9rem;
             height: 1rem;
             width: 5rem;
@@ -80,7 +80,7 @@
             box-shadow: 0 0 5px $scheme-grey-light;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             font-size: .9rem;
             height: 1rem;
             width: 5rem;
@@ -97,11 +97,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             display: none;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             display: none;
         }
     }
@@ -153,7 +153,7 @@
         margin-right: auto;
         padding-bottom: 2rem;
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             max-height: 40%;
             padding-bottom: 0;
         }
@@ -164,11 +164,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             width: 80%;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             width: 80%;
         }
     }
@@ -179,7 +179,7 @@
         padding-right: 2rem;
         width: 30%;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             width: 100%;
             font-size: 1rem;
             padding: 0 3.5rem;
@@ -187,7 +187,7 @@
         }
 
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             width: 100%;
             font-size: 1rem;
             padding: 0 3.5rem;
@@ -198,7 +198,7 @@
     &__prev-github-container {
         text-align: center;
         margin-top: 2rem;
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             font-size: .9rem;
             margin-top: .5rem;
         }
@@ -219,7 +219,7 @@
     &__prev-desc {
         margin-top: 1rem;
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             font-size: .9rem;
             margin-top: .5rem;
         }
@@ -228,7 +228,7 @@
     &__prev-stack {
         margin-top: 1rem;
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             font-size: .9rem;
             margin-top: .5rem;
         }
@@ -239,14 +239,14 @@
         max-height: 400px;
         width: 65%;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             height: 40%;
             width: 100%;
             max-width: 400px;
             margin-top: 3rem;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             position: fixed;
             height: 40%;
             width: auto;
@@ -274,7 +274,7 @@
             right: 1.5rem;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             top: 25%;
             &--prev {
                 left: .5rem;
@@ -285,7 +285,7 @@
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             top: 25%;
             &--prev {
                 left: .5rem;
@@ -321,13 +321,13 @@
             background-color: $scheme-grey-dark;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             height: 2.5rem;
             width: 2.5rem;
             font-size: 1.5rem;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             height: 2.5rem;
             width: 2.5rem;
             font-size: 1.5rem;
