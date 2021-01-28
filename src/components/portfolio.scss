@@ -303,6 +303,8 @@
         border-radius: 50%;
         border-style: none;
         text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
         height: 4rem;
         width: 4rem;
         background-color: $scheme-grey-light;
