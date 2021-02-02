@@ -12,10 +12,10 @@ function About() {
                 <div className="about__content-inner">
                     <img className="about__image" src="./assets/self-portrait.png" alt="cartoon version of Billy Ott" />
                     <div className="about__text-container">
-                        <div className="about__subheader">Billy Ott</div>
+                        <div className="about__subheader">Bill Ott</div>
                         <div className="about__bio">
                             <ul>
-                                <li>LOCATION: New York City, NY, USA</li>
+                                <li>LOCATION: NYC</li>
                                 <li>BIRTHDAY: 05.18.19XX</li>
                                 <li>BLOOD TYPE: A+</li>
                                 <li>MB: ISFJ</li>
