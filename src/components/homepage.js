@@ -29,7 +29,6 @@ class Homepage extends React.Component {
                             <NavLink to="/main-menu" className="homepage__footer-link">main menu</NavLink>/ 
                             <NavLink to="/portfolio" className="homepage__footer-link">portfolio</NavLink>/ 
                             <NavLink to="/about" className="homepage__footer-link">about</NavLink>/ 
-                            <NavLink to="/blog" className="homepage__footer-link">blog</NavLink>/ 
                             <NavLink to="/contact" className="homepage__footer-link">contact</NavLink>
                         </div>
                     </div>
