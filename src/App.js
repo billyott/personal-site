@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Background from './components/background';
 import Homepage from './components/homepage';
-// import Contact from './components/contact';
+import Contact from './components/contact';
 // import MainMenu from './components/main-menu';
 // import Portfolio from './components/portfolio';
 // import About from './components/about';
@@ -14,6 +14,7 @@ function App() {
     <div className="app">
       <Background />
       <Homepage />
+      <Contact />
 
       {/* <BrowserRouter basename="/">
         <Switch>

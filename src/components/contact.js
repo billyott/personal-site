@@ -17,7 +17,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <NavLink to="/main-menu" className="contact__back-button">GO BACK</NavLink>
+            {/* <NavLink to="/main-menu" className="contact__back-button">GO BACK</NavLink> */}
         </div>
     )
 }

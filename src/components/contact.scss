@@ -1,15 +1,6 @@
 @import '../styling-vars.scss';
 
 .contact {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $scheme-black;
 
     &__header {
         margin-top: 5%;
