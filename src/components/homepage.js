@@ -13,20 +13,6 @@ class Homepage extends React.Component {
                     <div className="homepage__header">FULL STACK DEVELOPER</div>
                     <div className="homepage__sub-header">BILL OTT</div>
                 </div>
-                <div className="homepage__background-area" >
-                    <ul className="homepage__background-circles">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
             </div>
         );
     }
