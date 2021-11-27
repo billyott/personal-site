@@ -1,7 +1,7 @@
 {
   "homepage": "https://billyott.com",
-  "name": "billy-ott-dot-com",
-  "version": "0.1.0",
+  "name": "bill-ott-dot-com",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
