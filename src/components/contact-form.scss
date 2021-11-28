@@ -38,11 +38,12 @@
         margin-top: 20px;
         border-radius: 4px;
         height: 50px;
-        color: black;
-        background-color: $matcha-cakecone;
+        color: $matcha-honeydew;
+        background-color: $matcha-tea-dark;
 
         &:hover {
-            background-color: $matcha-biscuit;
+            color: black;
+            background-color: $matcha-cakecone;
         }
 
         &:focus {
@@ -50,8 +51,8 @@
         }
 
         &:active {
-            color: $matcha-honeydew;
-            background-color: $matcha-tea-dark;
+            color: black;
+            background-color: $matcha-biscuit;
         }
     }
 }

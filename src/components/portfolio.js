@@ -1,6 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 import './portfolio.scss';
 import projects from  '../data/project-data.json';
