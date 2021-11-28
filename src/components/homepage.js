@@ -10,8 +10,8 @@ class Homepage extends React.Component {
         return (
             <div className="homepage">
                 <div class="homepage__title">
-                    <div className="homepage__header">FULL STACK DEVELOPER</div>
-                    <div className="homepage__sub-header">BILL OTT</div>
+                    <div className="homepage__header">Hello, there.</div>
+                    <div className="homepage__sub-header">I'm Bill Ott</div>
                 </div>
             </div>
         );
