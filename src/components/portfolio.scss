@@ -14,10 +14,6 @@
         font-weight: 500;
     }
 
-    // &__prev-details {
-    //     max-width: 600px;
-    // }
-
     &__prev-title {
         margin-top: 25px;
         font-size: 1.5rem;
@@ -25,12 +21,12 @@
 
     &__prev-desc {
         margin-top: 25px;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     &__prev-stack {
         margin-top: 10px;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     &__prev-github-container {
@@ -38,7 +34,18 @@
     }
 
     &__player-container {
-        height: 100%;
-        max-height: 400px;
+        height: 500px;
+        width: 95%;
+        max-width: 870px;
+        margin: 15px auto 0 auto;
+
+        @media (max-width: $tablet) {
+            height: 400px;
+        }
+
+        @media (max-width: $mobile) {
+            height: 200px;
+        }
     }
+
 }
