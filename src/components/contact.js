@@ -3,7 +3,7 @@ import ContactForm from './contact-form';
 
 import './contact.scss';
 
-function Contact() {
+export default function Contact() {
 
     return(
         <div className="contact" >
@@ -12,5 +12,3 @@ function Contact() {
         </div>
     )
 }
-
-export default Contact;

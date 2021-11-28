@@ -2,28 +2,23 @@ import React from 'react';
 
 import './background.scss';
 
-class Background extends React.Component {
+export default function Background() {
 
+    return (
+        <div className="background__background-area" >
+            <ul className="background__background-circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    );
 
-    render() {
-        return (
-            <div className="background__background-area" >
-                <ul className="background__background-circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        );
-    }
-
-}
-
-export default Background;
+};

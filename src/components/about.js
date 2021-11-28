@@ -2,7 +2,7 @@ import React from 'react';
 
 import './about.scss';
 
-function About() {
+export default function About() {
 
     return(
         <div className="about">
@@ -26,7 +26,6 @@ function About() {
                 </p>
             </div>
         </div>
-    )
-}
+    );
 
-export default About;
+};

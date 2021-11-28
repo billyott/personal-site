@@ -19,7 +19,7 @@
     &__input {
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
-        line-height: 40px;
+        line-height: 30px;
     }
 
 
@@ -38,12 +38,12 @@
         margin-top: 20px;
         border-radius: 4px;
         height: 50px;
-        color: $matcha-honeydew;
-        background-color: $matcha-tea-dark;
+        color: black;
+        background-color: $matcha-cakecone;
 
         &:hover {
-            color: black;
-            background-color: $matcha-cakecone;
+            color: $matcha-honeydew;
+            background-color: $matcha-tea-dark;
         }
 
         &:focus {
