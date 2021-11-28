@@ -10,21 +10,35 @@
     text-align: center;
     
     &__header {
-        font-size: 3.2rem;
+        font-size: 6rem;
         font-weight: 500;
     }
 
     &__sub-header {
         margin-top: 30px;
-        font-size: 1.3rem;
+        font-size: 2.4rem;
         padding: 0 15px;
         font-weight: 400;
     }
 
     &__tagline {
         margin-top: 30px;
-        font-size: 1.2rem;
+        font-size: 2.2rem;
         font-weight: 300;
+    }
+
+    @media (max-width: $mobile) {
+        &__header {
+            font-size: 3.2rem;
+        }
+    
+        &__sub-header {
+            font-size: 1.3rem;
+        }
+    
+        &__tagline {
+            font-size: 1.2rem;
+        }
     }
 
 }
