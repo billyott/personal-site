@@ -3,26 +3,29 @@ import emailjs from 'emailjs-com';
 
 import './contact.scss';
 
-export const ContactForm = () => {
+function ContactForm() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
+    
+    emailjs.sendForm('service_azyqwow', 'template_qn44fp9', e.target, 'user_w6bhc7Iz1HzSaAEscjbH1')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    e.target.reset();
+    
   };
 
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="email" />
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
