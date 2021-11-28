@@ -4,7 +4,7 @@
         "title": "12MONTHS",
         "prevImg": "./assets/twelvemonths-preview.png",
         "stack": "React.js, Ruby on Rails, React Redux",
-        "desc": "A minimalist journaling app that allows users to jot down notes, track habits, and monitor mood and sleep trends.",
+        "desc": "A diary application",
         "github": "https://github.com/billyott/twelve-months-client",
         "youtube": "https://www.youtube.com/watch?v=Pwc1hHV852g"
     },
@@ -13,7 +13,7 @@
         "title": "Flash Flip",
         "prevImg": "./assets/flashflip-preview.png",
         "stack": "React.js, Ruby on Rails",
-        "desc": "A flash card application to help with studying any topic. Includes a 'game' feature to help with testing.",
+        "desc": "A flash card application",
         "github": "https://github.com/billyott/flash-flip-client",
         "youtube": "https://www.youtube.com/watch?v=KvWOtRugWLg"
     },
@@ -22,7 +22,7 @@
         "title": "Completionist",
         "prevImg": "./assets/completionist-preview.png",
         "stack": "JavaScript, Ruby on Rails",
-        "desc": "A basic task tracker.",
+        "desc": "A task tracking application",
         "github": "https://github.com/bfeldman/completionist-frontend",
         "youtube": "https://www.youtube.com/watch?v=hXr_y20hb7g"
     },
@@ -31,7 +31,7 @@
         "title": "Scrambled",
         "prevImg": "./assets/scrambled-preview.png",
         "stack": "Ruby",
-        "desc": "A CLI word scramble game written completely in Ruby.",
+        "desc": "A CLI puzzle game application",
         "github": "https://github.com/billyott/scrambled",
         "youtube": "https://www.youtube.com/watch?v=K8k6POBPFfU"
     }

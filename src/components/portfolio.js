@@ -44,10 +44,10 @@ class Portfolio extends React.Component {
                     <div className="portfolio__prev-container-content">
                         <div className="portfolio__prev-details">
                             <div className="portfolio__prev-title">{this.state.selectedProject['title']}</div>
-                            <div className="portfolio__prev-desc">⚬ {this.state.selectedProject['desc']}</div>
-                            <div className="portfolio__prev-stack">⚬ built in {this.state.selectedProject['stack']}</div>
+                            <div className="portfolio__prev-desc">{this.state.selectedProject['desc']}</div>
+                            <div className="portfolio__prev-stack"><b>Built With</b>: {this.state.selectedProject['stack']}</div>
                             <div className="portfolio__prev-github-container">
-                                <a className="portfolio__prev-github" href={this.state.selectedProject['github']} target="_blank" rel="noreferrer">GitHub Repo</a>
+                                <a className="portfolio__prev-github" href={this.state.selectedProject['github']} target="_blank" rel="noreferrer">GitHub Repository</a>
                             </div>
                         </div>
                         <div className="portfolio__player-container">
