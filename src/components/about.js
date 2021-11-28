@@ -9,8 +9,9 @@ function About() {
             <div className="about__header">ABOUT</div>
             <div className="about__content">
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Hi! I'm a Full-stack Software Developer with a focus in React.js and Ruby on Rails. I'm also a former digital marketer who dabbled in data analysis, data visualization, team-management, and building things from scratch. In my spare time, I'm usually playing video games, cooking, or learning something new.
                 </p>
+                <img className="about__image" src="./assets/wo-pp-bw.png" alt="Bill Ott selfie" />
             </div>
         </div>
     )
