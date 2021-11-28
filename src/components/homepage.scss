@@ -13,19 +13,21 @@
     }
     
     &__header {
-        font-size: 3rem;
-        padding-left: 1rem;
+        font-size: 3.2rem;
+        font-weight: 800;
     }
 
     &__sub-header {
         margin-top: 30px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0 15px;
+        font-weight: 500;
     }
 
     &__tagline {
         margin-top: 30px;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        font-weight: 200;
     }
 
 }
