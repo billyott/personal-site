@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import './contact.scss';
 
@@ -16,7 +15,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            {/* <NavLink to="/main-menu" className="contact__back-button">GO BACK</NavLink> */}
         </div>
     )
 }

@@ -15,8 +15,8 @@ function App() {
       <Background />
       <Homepage />
       <About />
+      <Contact />
       {/* <About /> */}
-      {/* <Contact /> */}
 
       {/* <BrowserRouter basename="/">
         <Switch>
