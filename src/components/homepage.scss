@@ -4,21 +4,28 @@
 
     height: 100vh;
     color: $matcha-tea-dark;
+    text-align: center;
 
-    &__title {
+    &__container {
         width: 100%;
         position: absolute;
         top: 35vh;
     }
     
     &__header {
-        text-align: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        padding-left: 1rem;
     }
 
     &__sub-header {
-        text-align: center;
-        font-size: 1.5rem;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+
+    &__tagline {
+        margin-top: 30px;
+        font-size: 1rem;
     }
 
 }
