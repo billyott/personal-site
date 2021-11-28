@@ -1,173 +1,41 @@
 @import '../styling-vars.scss';
 
 .about {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $scheme-black;
-    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
     &__header {
-        margin-top: 5%;
-        margin-left: 15%;
         font-size: 3rem;
-        font-weight: bolder;
-        font-style: italic;
-        color: $scheme-grey-light-a7;
-
-        @media (max-width: $tablet) {
-            font-size: 2.5rem;
-            margin-left: 100px;
-        }
-
+        font-weight: 500;
         @media (max-width: $mobile) {
             font-size: 2.5rem;
-            margin-left: 50px;
         }
     }
 
-    &__content-outer {
-        border-color: $scheme-green-a7;
-        border-style: solid;
-        border-top-width: 1rem;
-        border-left-width: 1.2rem;
-        border-right-width: 1.2rem;
-        border-bottom-width: 3rem;
-        border-radius: 1.25rem 2.5rem 2.5rem .625rem;
-        box-shadow: 0 0 15px $scheme-green-light-a4;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    &__content-inner {
-        display: flex;
-        flex-direction: row;
-        box-shadow: 0 0 10px $scheme-green-light-a4;
-        border-radius: .4rem 1.2rem .5rem .3125rem;
-        padding: 5%;
+    &__content {
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 1.3rem;
+        @media (max-width: $mobile) {
+            font-size: 1rem;
+        }
     }
 
     &__image {
-        width: 300px;
-        height: 300px;
-        opacity: 0.7;
-        padding-right: 50px;
-        margin: auto;
-
-        @media (max-width: $tablet) {
-            display: none;
-        }
-
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 225px;
+        height: 225px;
+        border-radius: 100%;
         @media (max-width: $mobile) {
-            display: none;
+            width: 150px;
+            height: 150px;
         }
     }
-
-    &__text-container {
-        margin-left: auto;
-        max-width: 60%;
-
-        @media (max-width: $tablet) {
-            max-width: 100%;
-            margin-left: none;
-        }
-
-        @media (max-width: $mobile) {
-            max-width: 100%;
-            margin-left: none;
-        }
-    }
-
-    &__subheader {
-        text-align: center;
-        font-size: 3rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: $scheme-yellow;
-        transform: skewY(-4deg);
-
-        @media (max-width: $tablet) {
-            font-size: 2.6rem;
-        }
-
-        @media (max-width: $mobile) {
-            font-size: 2.2rem;
-        }
-    }
-
-    &__bio {
-        color: $scheme-white;
-        justify-content: left;
-        font-size: 1.5rem;
-        font-family: sans-serif;
-
-        @media (max-width: $tablet) {
-            font-size: 1.5rem;
-            line-height: 130%;
-        }
-
-        @media (max-width: $mobile) {
-            font-size: 1rem;
-            line-height: 150%;
-        }
-    }
-
-    &__back-button {
-        text-align: center;
-        display: block;
-        width: 20%;
-        height: 2.7rem;
-        font-weight: bold;
-        margin-top: -3.2rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-decoration: none;
-        padding-top: .3rem;
-        font-size: 2.1rem;
-        font-family: sans-serif;
-        color: $scheme-white;
-        background-color: $scheme-purple-dark-a7;
-        border-style: solid;
-        border-color: $scheme-white;
-        box-shadow: 0 0 10px $scheme-grey-light;
-        border-radius: .625rem;
-        
-        &:hover {
-            color: $scheme-purple-dark;
-            background-color: $scheme-grey-light-a7;
-        }
-
-        &:focus {
-            color: $scheme-purple-dark;
-            background-color: $scheme-grey-light-a7;
-            outline: none;
-        }
-
-        @media (max-width: $tablet) {
-            font-size: 1.5rem;
-            width: 30%;
-            padding-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 2.2rem;
-            margin-top: -3.1rem;
-        }
-
-        @media (max-width: $mobile) {
-            font-size: 1.5rem;
-            width: 40%;
-            padding-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 2.2rem;
-            margin-top: -3.1rem;
-        }
-    }
-
 }

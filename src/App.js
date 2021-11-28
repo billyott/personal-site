@@ -1,17 +1,23 @@
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+// import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
+import Background from './components/background';
 import Homepage from './components/homepage';
-import MainMenu from './components/main-menu';
-import Portfolio from './components/portfolio';
-import About from './components/about';
-import Blog from './components/blog';
 import Contact from './components/contact';
+import About from './components/about';
+import Portfolio from './components/portfolio';
+
 import './app.scss';
 
 function App() {
   return (
     <div className="app">
-      <BrowserRouter basename="/">
+      <Background />
+      <Homepage />
+      <About />
+      <Portfolio />
+      <Contact />
+
+      {/* <BrowserRouter basename="/">
         <Switch>
           <Route path="/main-menu">
             <MainMenu />
@@ -32,7 +38,7 @@ function App() {
             <Homepage />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

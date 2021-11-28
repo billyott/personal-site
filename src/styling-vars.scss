@@ -1,3 +1,31 @@
+
+//********** v2 **********//
+
+// scheme colors
+$matcha-tea-dark: rgb(109,122,102);
+$matcha-tea: rgb(124,156,108);
+$matcha-honeydew: rgb(242,253,235);
+$matcha-lemonchiffon: rgb(254,244,201);
+$matcha-cakecone: rgb(231,197,159);
+$matcha-biscuit: rgb(168,124,121);
+
+// scheme colors a7
+$matcha-tea-dark-a7: rgba(109,122,102,0.7);
+$matcha-tea-a7: rgba(124,156,108,0.7);
+$matcha-honeydew-a7: rgba(242,253,235,0.7);
+$matcha-lemonchiffon-a7: rgba(254,244,201,0.7);
+$matcha-cakecone-a7: rgba(231,197,159,0.7);
+$matcha-biscuit-a7: rgba(168,124,121,0.7);
+
+// scheme colors a4
+$matcha-tea-dark-a4: rgba(109,122,102,0.4);
+$matcha-tea-a4: rgba(124,156,108,0.4);
+$matcha-honeydew-a4: rgba(242,253,235,0.4);
+$matcha-lemonchiffon-a4: rgba(254,244,201,0.4);
+$matcha-cakecone-a4: rgba(231,197,159,0.4);
+$matcha-biscuit-a4: rgba(168,124,121,0.4);
+
+//********** v1 **********//
 // scheme colors
 $scheme-purple: rgb(130, 112, 196);
 $scheme-purple-dark: rgb(42, 32, 69);
@@ -32,6 +60,24 @@ $scheme-grey-a7: rgba(145, 143, 143, .7);
 $scheme-grey-dark-a7: rgba(148, 148, 148, .7);
 $scheme-grey-light-a7: rgba(224, 224, 224, .7);
 
+// scheme colors a6
+$scheme-purple-a6: rgba(28, 16, 75, .6);
+$scheme-purple-dark-a6: rgba(42, 32, 69, .6);
+$scheme-purple-light-a6: rgba(182, 171, 219, .6);
+$scheme-yellow-a6: rgba(248, 199, 22, .6);
+$scheme-yellow-light-a6: rgba(248, 219, 112, .6);
+$scheme-blue-a6: rgba(33, 49, 141, .6);
+$scheme-green-a6: rgba(33, 126, 98, .6);
+$scheme-green-light-a6: rgba(171, 219, 205, .6);
+$scheme-red-a6: rgba(185, 24, 24, .6);
+$scheme-red-light-a6: rgba(211, 109, 109, .6);
+$scheme-white-a6: rgba(255, 255, 255, .6);
+$scheme-black-a6: rgba(0, 0, 0, .6);
+$scheme-grey-a6: rgba(145, 143, 143, .6);
+$scheme-grey-dark-a6: rgba(148, 148, 148, .6);
+$scheme-grey-light-a6: rgba(224, 224, 224, .6);
+
+
 // scheme colors a4
 $scheme-purple-a4: rgba(130, 112, 196, .4);
 $scheme-purple-dark-a4: rgba(42, 32, 69, .4);
@@ -58,7 +104,6 @@ $link-border-color: #f8db70dc;
 $prev-image-border: rgba(112, 196, 171, 0.4);
 $prev-image-border-outline: rgb(171, 219, 205);
 $prev-image-background: rgba(33, 126, 98, 0.678);
-
 
 //breakpoints
 $mobile: 480px;

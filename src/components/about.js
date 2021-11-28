@@ -1,35 +1,31 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import './about.scss';
 
-function About() {
+export default function About() {
 
     return(
-        <div className="about" style={{backgroundImage: `url('./assets/about-background.png')`}}>
-            <div className="about__header">ABOUT</div>
-            <div className="about__content-outer">
-                <div className="about__content-inner">
-                    <img className="about__image" src="./assets/self-portrait.png" alt="cartoon version of Billy Ott" />
-                    <div className="about__text-container">
-                        <div className="about__subheader">Bill Ott</div>
-                        <div className="about__bio">
-                            <ul>
-                                <li>LOCATION: NYC</li>
-                                <li>BIRTHDAY: 05.18.19XX</li>
-                                <li>BLOOD TYPE: A+</li>
-                                <li>MB: ISFJ</li>
-                            </ul>
-                            <p>
-                            bio: Hi! I'm a Full-stack Software Developer with a focus in React.js and Ruby on Rails. I'm also a former digital marketer who dabbled in data analysis, data visualization, team-management, and building things from scratch. In my spare time, I'm usually playing video games, cooking, or learning something new.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div className="about">
+            <div className="about__header">BIO</div>
+            <div className="about__content">
+                <img className="about__image" src="./assets/wo-pp-bw.png" alt="Bill Ott selfie" />
+                <p>
+                Hello. Thank you for visiting my site. 
+                <br/>
+                <br/>
+                I'm a full stack developer. These days, I'm mostly writing Javascript and working in frameworks like Vue and React, but I also use Python and Ruby.
+                <br/>
+                <br/>
+                In the past, I worked in digital marketing - managing campaigns, analyzing performance data, and building tools to make it easier. I worked with a lot of cool tech, but I wanted to make cool tech.
+                <br/>
+                <br/>
+                I'm usually coding, learning Japanese, cooking, or playing video games.
+                <br/>
+                <br/>
+                NYC is home.
+                </p>
             </div>
-            <NavLink to="/main-menu" className="about__back-button">GO BACK</NavLink>
         </div>
-    )
-}
+    );
 
-export default About;
+};

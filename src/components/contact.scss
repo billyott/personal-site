@@ -1,166 +1,20 @@
 @import '../styling-vars.scss';
 
 .contact {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $scheme-black;
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 30px auto;
 
     &__header {
-        margin-top: 5%;
-        margin-left: 15%;
         font-size: 3rem;
-        font-weight: bolder;
-        font-style: italic;
-        color: $scheme-grey-light-a7;
-
-        @media (max-width: $tablet) {
-            font-size: 2.6rem;
-            margin-left: 10%;
-        }
-
+        font-weight: 500;
         @media (max-width: $mobile) {
-            font-size: 2.2rem;
-            margin-left: 10%;
+            font-size: 2.5rem;
         }
     }
-
-    &__content-outer {
-        border-color: $scheme-yellow-a4;
-        border-style: solid;
-        border-top-width: 1rem;
-        border-left-width: 1.2rem;
-        border-right-width: 1.2rem;
-        border-bottom-width: 3rem;
-        border-radius: 1.25rem 2.5rem 2.5rem .625rem;
-        box-shadow: 0 0 15px $scheme-yellow-light-a4;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    &__content-inner {
-        min-height: 500px;
-        box-shadow: 0 0 10px $scheme-yellow-light-a4;
-        border-radius: .4rem 1.2rem .5rem .3125rem;
-        position: relative;
-    }
-
-    &__items {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 75%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-        @media (max-width: $tablet) {
-            width: 90%;
-        }
-
-        @media (max-width: $mobile) {
-            width: 90%;
-        }
-    }
-
-    &__item {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
-        padding-top: .5rem;
-        background-color: $scheme-black-a4;
-        height: 4rem;
-        text-decoration: none;
-        font-size: 3rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: $scheme-yellow;
-        border-style: solid;
-        border-color: $scheme-yellow;
-        border-radius:  3rem;
-        box-shadow: 0 0 15px $scheme-yellow-light-a7;
-        
-        &:hover {
-            color: $scheme-black;
-            background-color: $scheme-yellow-a7;
-        }
-
-        &:focus {
-            color: $scheme-black;
-            background-color: $scheme-yellow-a7;
-            outline: none;
-        }
-
-        @media (max-width: $tablet) {
-            font-size: 2.6rem;
-            padding-top: 25px;
-        }
-
-        @media (max-width: $mobile) {
-            font-size: 2.2rem;
-            padding-top: 25px;
-        }
-        
-    }
-
-    &__back-button {
-        text-align: center;
-        display: block;
-        width: 20%;
-        height: 2.7rem;
-        font-weight: bold;
-        margin-top: -3.2rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-decoration: none;
-        padding-top: .3rem;
-        font-size: 2.1rem;
-        font-family: sans-serif;
-        color: $scheme-white;
-        background-color: $scheme-purple-dark-a7;
-        border-style: solid;
-        border-color: $scheme-white;
-        box-shadow: 0 0 10px $scheme-grey-light;
-        border-radius: .625rem;
-        
-        &:hover {
-            color: $scheme-purple-dark;
-            background-color: $scheme-grey-light-a7;
-        }
-
-        &:focus {
-            color: $scheme-purple-dark;
-            background-color: $scheme-grey-light-a7;
-            outline: none;
-        }
-
-        @media (max-width: $tablet) {
-            font-size: 1.5rem;
-            width: 30%;
-            padding-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 2.2rem;
-            margin-top: -3.1rem;
-        }
-
-        @media (max-width: $mobile) {
-            font-size: 1.5rem;
-            width: 40%;
-            padding-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 2.2rem;
-            margin-top: -3.1rem;
-        }
-    }
-
 }
