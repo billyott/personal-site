@@ -3,9 +3,9 @@
 import Background from './components/background';
 import Homepage from './components/homepage';
 import Contact from './components/contact';
+import About from './components/about';
 // import MainMenu from './components/main-menu';
 // import Portfolio from './components/portfolio';
-// import About from './components/about';
 // import Blog from './components/blog';
 import './app.scss';
 
@@ -14,7 +14,9 @@ function App() {
     <div className="app">
       <Background />
       <Homepage />
-      <Contact />
+      <About />
+      {/* <About /> */}
+      {/* <Contact /> */}
 
       {/* <BrowserRouter basename="/">
         <Switch>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import './styling-vars.scss';
 
 html {
     background-color: black; 
@@ -7,4 +8,6 @@ html {
 .app {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
+    color: $matcha-tea-dark;
+    position: relative;
 }

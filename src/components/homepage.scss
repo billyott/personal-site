@@ -1,16 +1,13 @@
 @import '../styling-vars.scss';
 
 .homepage {
-
+    position: relative;
     height: 100vh;
-    color: $matcha-tea-dark;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-
-    &__container {
-        width: 100%;
-        position: absolute;
-        top: 35vh;
-    }
     
     &__header {
         font-size: 3.2rem;
