@@ -3,6 +3,7 @@
 .homepage {
 
     height: 100vh;
+    color: $matcha-tea-dark;
 
     &__title {
         width: 100%;
@@ -12,13 +13,11 @@
     
     &__header {
         text-align: center;
-        color: #fff;
         font-size: 2.5rem;
     }
 
     &__sub-header {
         text-align: center;
-        color: #fff;
         font-size: 1.5rem;
     }
 
