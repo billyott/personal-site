@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactPlayer from "react-player";
+import ReactPlayer from "react-player";
 
 import './portfolio.scss';
 import projects from  '../data/project-data.json';
@@ -12,16 +12,6 @@ class Portfolio extends React.Component {
 
     updateSelectedProject = (project) => {
         this.setState({selectedProject: project})
-    }
-
-    generatePreviewIcons = () => {
-        return (projects.map(project => {
-            return (
-                <div key={project.id} className="portfolio__project" style={{backgroundImage: `url('${project.prevImg}')`}}>
-                    <button className="portfolio__project-title" onFocus={() => this.updateSelectedProject(project)}>{project.title}</button>
-                </div>
-            )
-        }))
     }
 
     findIndexOfSelectedProject = () => {
@@ -48,16 +38,9 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div className="portfolio">
-                {/* <div className="portfolio__header-container">
-                    <div className="portfolio__header">PORTFOLIO</div>
-                </div>
-                <div className="portfolio__projects-container">
-                    {this.generatePreviewIcons()}
-                </div>
-                <div className="portfolio__prev-container">
-                    <div className="portfolio__mobile-toggle-container portfolio__mobile-toggle-container--prev">
-                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--prev" onClick={this.toggleBack}>&laquo;</button>
-                    </div>
+                <div className="portfolio__header">PORTFOLIO</div>
+                <div className="portfolio__content">
+
                     <div className="portfolio__prev-container-content">
                         <div className="portfolio__prev-details">
                             <div className="portfolio__prev-title">{this.state.selectedProject['title']}</div>
@@ -71,10 +54,11 @@ class Portfolio extends React.Component {
                             <ReactPlayer className='portfolio__react-player' url={this.state.selectedProject['youtube']} width="100%" height="100%"/>
                         </div>
                     </div>
-                    <div className="portfolio__mobile-toggle-container portfolio__mobile-toggle-container--next">
-                       <button className="portfolio__mobile-toggle portfolio__mobile-toggle--next" onClick={this.toggleNext}>&raquo;</button>
+                    <div className="portfolio__mobile-toggle-container portfolio__mobile-toggle-container">
+                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--prev" onClick={this.toggleBack}>&laquo;</button>
+                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--next" onClick={this.toggleNext}>&raquo;</button>
                     </div>
-                </div> */}
+                </div>
             </div>
         );
     }

@@ -1,5 +1,16 @@
 @import '../styling-vars.scss';
 
 .portfolio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
+    &__header {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
 }

@@ -6,7 +6,7 @@ export default function About() {
 
     return(
         <div className="about">
-            <div className="about__header">ABOUT</div>
+            <div className="about__header">BIO</div>
             <div className="about__content">
                 <img className="about__image" src="./assets/wo-pp-bw.png" alt="Bill Ott selfie" />
                 <p>
