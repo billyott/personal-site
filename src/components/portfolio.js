@@ -44,10 +44,10 @@ class Portfolio extends React.Component {
                     <div className="portfolio__prev-container-content">
                         <div className="portfolio__toggle-container-wrapper">
                             <div className="portfolio__toggle-container portfolio__toggle-container--prev">
-                                <button className="portfolio__toggle portfolio__toggle--prev" onClick={this.toggleBack}>&laquo;</button>
+                                <button className="portfolio__toggle portfolio__toggle--prev" onClick={this.toggleBack}>&laquo; prev</button>
                             </div>
                             <div className="portfolio__toggle-container portfolio__toggle-container--next">
-                            <button className="portfolio__toggle portfolio__toggle--next" onClick={this.toggleNext}>&raquo;</button>
+                            <button className="portfolio__toggle portfolio__toggle--next" onClick={this.toggleNext}>next &raquo;</button>
                             </div>
                         </div>
                         <div className="portfolio__prev-details">
