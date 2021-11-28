@@ -48,10 +48,9 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className="portfolio" style={{backgroundImage: `url('./assets/about-background.png')`}}>
-                <div className="portfolio__header-container">
+            <div className="portfolio">
+                {/* <div className="portfolio__header-container">
                     <div className="portfolio__header">PORTFOLIO</div>
-                    <NavLink to="/main-menu" className="portfolio__back-button">GO BACK</NavLink>
                 </div>
                 <div className="portfolio__projects-container">
                     {this.generatePreviewIcons()}
@@ -76,7 +75,7 @@ class Portfolio extends React.Component {
                     <div className="portfolio__mobile-toggle-container portfolio__mobile-toggle-container--next">
                        <button className="portfolio__mobile-toggle portfolio__mobile-toggle--next" onClick={this.toggleNext}>&raquo;</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

@@ -4,9 +4,8 @@ import Background from './components/background';
 import Homepage from './components/homepage';
 import Contact from './components/contact';
 import About from './components/about';
-// import MainMenu from './components/main-menu';
-// import Portfolio from './components/portfolio';
-// import Blog from './components/blog';
+import Portfolio from './components/portfolio';
+
 import './app.scss';
 
 function App() {
@@ -15,8 +14,8 @@ function App() {
       <Background />
       <Homepage />
       <About />
+      <Portfolio />
       <Contact />
-      {/* <About /> */}
 
       {/* <BrowserRouter basename="/">
         <Switch>
