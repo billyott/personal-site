@@ -1,7 +1,7 @@
 @import '../styling-vars.scss';
 
 .background {
-
+    
     &__background-area{
         position: fixed;
         top: 0;
@@ -114,7 +114,6 @@
     }
 
     @keyframes animate {
-    
         0%{
             transform: translateY(0) rotate(0deg);
             opacity: 1;
@@ -126,7 +125,5 @@
             opacity: 0;
             border-radius: 100%;
         }
-    
     }
-
 }
