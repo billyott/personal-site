@@ -20,25 +20,38 @@
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         line-height: 40px;
-        border-width: 2px;
-        border-color: $matcha-tea-dark;
-        border-radius: 5px;
     }
+
 
     &__textarea {
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         min-height: 200px;
-        border-width: 2px;
-        border-color: $matcha-tea-dark;
-        border-radius: 5px;
         resize: none;
+        outline: none;
     }
 
     &__submit {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
         margin-top: 20px;
-        border-radius: 5px;
+        border-radius: 4px;
         height: 50px;
+        color: black;
         background-color: $matcha-cakecone;
+
+        &:hover {
+            background-color: $matcha-biscuit;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 2px black;
+        }
+
+        &:active {
+            color: $matcha-honeydew;
+            background-color: $matcha-tea-dark;
+        }
     }
 }
