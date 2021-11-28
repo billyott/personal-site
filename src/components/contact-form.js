@@ -28,7 +28,7 @@ function ContactForm() {
       <input className='contact-form__input' type="email" name="email" />
       <label className='contact-form__label'>Message</label>
       <textarea className='contact-form__textarea' name="message" />
-      <input type="submit" value="Send" />
+      <input className='contact-form__submit' type="submit" value="Send" />
     </form>
   );
 };

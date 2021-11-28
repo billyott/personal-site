@@ -20,12 +20,25 @@
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         line-height: 40px;
+        border-width: 2px;
+        border-color: $matcha-tea-dark;
+        border-radius: 5px;
     }
 
     &__textarea {
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         min-height: 200px;
+        border-width: 2px;
+        border-color: $matcha-tea-dark;
+        border-radius: 5px;
         resize: none;
+    }
+
+    &__submit {
+        margin-top: 20px;
+        border-radius: 5px;
+        height: 50px;
+        background-color: $matcha-cakecone;
     }
 }
