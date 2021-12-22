@@ -17,12 +17,12 @@ export default function ContactForm() {
     .then((result) => {
       console.log(result.text);
       setHasSubmitted(true);
+      form.current.reset();
     }, (error) => {
       console.log(error.text);
       setHadError(true);
     });
 
-    e.target.reset();
   };
 
   return (
@@ -34,7 +34,7 @@ export default function ContactForm() {
       )}
       {hadError && (
         <div className='contact-form__submit-message'>
-          Oh no! Issue sending message - please refresh and try again :(
+          Oh no! Issue sending message - please try again :(
         </div>
       )}
       <label className='contact-form__label'>Name</label>
