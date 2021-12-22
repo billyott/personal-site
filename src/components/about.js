@@ -10,7 +10,7 @@ export default function About() {
             <div className="about__content">
                 <img className="about__image" src="./assets/wo-pp-bw.png" alt="Bill Ott selfie" />
                 <p>
-                Hello. Thank you for visiting my site. 
+                Hello again. Thank you for visiting my site. 
                 <br/>
                 <br/>
                 I'm a full stack developer. These days, I'm mostly writing Javascript and working in frameworks like Vue and React, but I also use Python and Ruby.
