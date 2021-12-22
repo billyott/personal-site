@@ -22,6 +22,7 @@ export default function ContactForm() {
 
   return (
     <form className='contact-form' ref={form} onSubmit={sendEmail}>
+      <div className='contact-form__thank-you-message'>Thank you for your message! I'll reply as soon as possible!</div>
       <label className='contact-form__label'>Name</label>
       <input className='contact-form__input' type="text" name="name" />
       <label className='contact-form__label'>Email</label>
