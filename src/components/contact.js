@@ -3,12 +3,16 @@ import ContactForm from './contact-form';
 
 import './contact.scss';
 
-export default function Contact() {
+class Contact extends React.Component {
 
-    return(
-        <div className="contact" >
-            <div className="contact__header">CONTACT</div>
-            <ContactForm />
-        </div>
-    )
+    render() {
+        return(
+            <div className="contact" >
+                <div className="contact__header">CONTACT</div>
+                <ContactForm />
+            </div>
+        )
+    }
 }
+
+export default Contact;
