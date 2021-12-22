@@ -52,36 +52,12 @@
         }
     }
 
-    &__toggle-container {
-        margin: auto 0;
-        position: absolute;
-        top: 20%;
-
-        &--prev {
-            left: 400px;
-            @media (max-width: $tablet) {
-                left: 150px;
-                top: 25%;
-            }
-    
-            @media (max-width: $mobile) {
-                left: 10px;
-                top: 30%
-            }
-        }
-
-        &--next {
-            right: 400px;
-            @media (max-width: $tablet) {
-                right: 150px;
-                top: 25%;
-            }
-    
-            @media (max-width: $mobile) {
-                right: 10px;
-                top: 30%
-            }
-        }
+    &__toggle-container-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+        margin: auto;
+        padding: 10px;
     }
 
     &__toggle {
@@ -93,6 +69,7 @@
         height: 40px;
         color: black;
         background-color: $matcha-cakecone;
+        width: 60px;
 
         &:hover {
             color: $matcha-honeydew;
