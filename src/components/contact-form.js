@@ -10,7 +10,7 @@ export default function ContactForm() {
   function sendEmail(e) {
     e.preventDefault();
     
-    emailjs.sendForm('service_azyqwow', 'template_qn44fp9', e.target, 'user_w6bhc7Iz1HzSaAEscjbH1')
+    emailjs.sendForm(process.env.REACT_APP_SABISU, process.env.REACT_APP_TENPURETO, e.target, process.env.REACT_APP_YUZA)
     .then((result) => {
         console.log(result.text);
     }, (error) => {
