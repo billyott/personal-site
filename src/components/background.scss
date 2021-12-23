@@ -4,15 +4,10 @@
     
     &__background-area{
         position: fixed;
-        top: -100px;
-        bottom: -100px;
-        left: -30px;
-        right: -30px;
+        left: 0px;
+        right: 0px;
         background: $matcha-honeydew;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        min-height: 450px;
+        height: 120%;
         z-index: -1;
     }
     
