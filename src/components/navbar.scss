@@ -18,11 +18,37 @@
 
     &__list-item {
         float: left;
+        display: block;
+        padding: 8px;
     }
 
     &__list-item a{
-        display: block;
-        padding: 8px;
+        text-decoration: none;
+        color: $matcha-tea-dark;
+
+    }
+
+    &__list-item:hover {
+        color: $matcha-honeydew;
+        background-color: $matcha-tea-dark;
+        cursor: pointer;
+    }
+
+    &__list-item a:hover {
+        color: $matcha-honeydew;
+        background-color: $matcha-tea-dark;
+        cursor: pointer;
+    }
+
+    &__list-item:focus {
+        box-shadow: 0 0 0 2px black;
+        cursor: pointer;
+    }
+
+    &__list-item:active {
+        color: black;
+        background-color: $matcha-biscuit;
+        cursor: pointer;
     }
 
 }
