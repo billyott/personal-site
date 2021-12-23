@@ -45,7 +45,17 @@
         cursor: pointer;
     }
 
+    &__list-item a:focus {
+        cursor: pointer;
+    }
+
     &__list-item:active {
+        color: black;
+        background-color: $matcha-biscuit;
+        cursor: pointer;
+    }
+
+    &__list-item a:active {
         color: black;
         background-color: $matcha-biscuit;
         cursor: pointer;
