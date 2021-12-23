@@ -1,6 +1,10 @@
 import Background from './components/background';
 import Navbar from './components/navbar';
-import Main from './components/main';
+import Homepage from './components/homepage';
+import About from './components/about';
+import Portfolio from './components/portfolio';
+import Contact from './components/contact';
+
 import './app.scss';
 
 function App() {
@@ -8,7 +12,10 @@ function App() {
     <div className="app">
       <Background />
       <Navbar />
-      <Main />
+      <Homepage />
+      <About />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

@@ -4,6 +4,10 @@
     position: fixed;
     z-index: 2;
     right: 0;
+
+    @media (max-width: $mobile) {
+        font-size: .8rem;
+    }
     
     &__list {
         margin: 0;

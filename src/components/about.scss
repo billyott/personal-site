@@ -9,6 +9,10 @@
     justify-content: center;
     text-align: center;
 
+    @media (max-width: $mobile) {
+        padding-top: 30px;
+    }
+
     &__header {
         font-size: 3rem;
         font-weight: 500;

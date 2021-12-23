@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className='navbar'>
             <ul className='navbar__list'>
                 <li className='navbar__list-item'><Link to="homepage" smooth={true} duration={500}>Home</Link></li>
-                <li className='navbar__list-item'><Link to="about" smooth={true} duration={500}>About</Link></li>
+                <li className='navbar__list-item'><Link to="about" smooth={true} duration={500}>Bio</Link></li>
                 <li className='navbar__list-item'><Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
                 <li className='navbar__list-item'><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
