@@ -22,19 +22,7 @@
         padding: 8px;
     }
 
-    &__list-item a{
-        text-decoration: none;
-        color: $matcha-tea-dark;
-
-    }
-
     &__list-item:hover {
-        color: $matcha-honeydew;
-        background-color: $matcha-tea-dark;
-        cursor: pointer;
-    }
-
-    &__list-item a:hover {
         color: $matcha-honeydew;
         background-color: $matcha-tea-dark;
         cursor: pointer;
@@ -45,17 +33,7 @@
         cursor: pointer;
     }
 
-    &__list-item a:focus {
-        cursor: pointer;
-    }
-
     &__list-item:active {
-        color: black;
-        background-color: $matcha-biscuit;
-        cursor: pointer;
-    }
-
-    &__list-item a:active {
         color: black;
         background-color: $matcha-biscuit;
         cursor: pointer;
