@@ -4,12 +4,11 @@
     
     &__background-area{
         position: fixed;
-        top: 0;
-        bottom: 0;
+        top: -100px;
+        bottom: -100px;
         left: 0;
         right: 0;
         background: $matcha-honeydew;
-        // background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     }
     
     &__background-circles{
