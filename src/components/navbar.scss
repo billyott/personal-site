@@ -24,7 +24,9 @@
     &__link {
         display: block;
         padding: 8px;
-        &:hover,&:focus,&:active {
+        text-decoration: none;
+        color: $matcha-tea-dark;
+        &:hover {
             color: black;
             background-color: $matcha-biscuit;
             cursor: pointer;

@@ -16,6 +16,7 @@ export default function Navbar() {
                         smooth={true}
                         duration={500}
                         spy={true}
+                        href=""
                     >
                         Home
                     </Link>
@@ -28,6 +29,7 @@ export default function Navbar() {
                         smooth={true}
                         duration={500}
                         spy={true}
+                        href=""
                     >
                         Bio
                     </Link>
@@ -40,6 +42,7 @@ export default function Navbar() {
                         smooth={true}
                         duration={500}
                         spy={true}
+                        href=""
                     >
                         Portfolio
                     </Link>
@@ -52,6 +55,7 @@ export default function Navbar() {
                         smooth={true}
                         duration={500}
                         spy={true}
+                        href=""
                     >
                         Contact
                     </Link>
