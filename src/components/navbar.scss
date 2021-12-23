@@ -1,0 +1,28 @@
+@import '../styling-vars.scss';
+
+.navbar {
+    position: relative;
+    // min-height: 100vh;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // text-align: center;
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    &__list-item {
+        float: left;
+    }
+
+    &__list-item a{
+        display: block;
+        padding: 8px;
+    }
+
+}
