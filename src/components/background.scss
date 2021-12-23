@@ -9,6 +9,8 @@
         left: 0;
         right: 0;
         background: $matcha-honeydew;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     
     &__background-circles{
