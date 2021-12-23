@@ -6,9 +6,12 @@
         position: fixed;
         top: -100px;
         bottom: -100px;
-        left: 0;
-        right: 0;
+        left: -30px;
+        right: -30px;
         background: $matcha-honeydew;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     
     &__background-circles{
