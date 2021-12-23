@@ -10,7 +10,6 @@ export default function Navbar() {
             <ul className='navbar__list'>
                 <li className='navbar__list-item'>
                     <Link
-                        activeClass="navbar__link--active"
                         className="navbar__link"
                         to="homepage"
                         smooth={true}
@@ -24,7 +23,6 @@ export default function Navbar() {
                 </li>
                 <li className='navbar__list-item'>
                     <Link
-                        activeClass="navbar__link--active"
                         className="navbar__link"
                         to="about"
                         smooth={true}
@@ -38,7 +36,6 @@ export default function Navbar() {
                 </li>
                 <li className='navbar__list-item'>
                     <Link
-                        activeClass="navbar__link--active"
                         className="navbar__link"
                         to="portfolio"
                         smooth={true}
@@ -52,7 +49,6 @@ export default function Navbar() {
                 </li>
                 <li className='navbar__list-item'>
                     <Link
-                        activeClass="navbar__link--active"
                         className="navbar__link"
                         to="contact"
                         smooth={true}

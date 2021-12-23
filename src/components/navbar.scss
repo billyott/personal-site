@@ -27,16 +27,10 @@
         text-decoration: none;
         color: $matcha-tea-dark;
         &:hover {
-            color: black;
-            background-color: $matcha-biscuit;
+            color: $matcha-honeydew;
+            background-color: $matcha-tea-dark;
             cursor: pointer;
         }
-    }
-
-    &__link--active {
-        color: $matcha-honeydew;
-        background-color: $matcha-tea-dark;
-        cursor: pointer;
     }
 
 }
