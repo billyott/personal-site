@@ -19,23 +19,21 @@
     &__list-item {
         float: left;
         display: block;
-        padding: 8px;
     }
 
-    &__list-item:hover {
+    &__link {
+        display: block;
+        padding: 8px;
+        &:hover,&:focus,&:active {
+            color: black;
+            background-color: $matcha-biscuit;
+            cursor: pointer;
+        }
+    }
+
+    &__link--active {
         color: $matcha-honeydew;
         background-color: $matcha-tea-dark;
-        cursor: pointer;
-    }
-
-    &__list-item:focus {
-        box-shadow: 0 0 0 2px black;
-        cursor: pointer;
-    }
-
-    &__list-item:active {
-        color: black;
-        background-color: $matcha-biscuit;
         cursor: pointer;
     }
 
