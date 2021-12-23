@@ -26,11 +26,19 @@
         padding: 8px;
         text-decoration: none;
         color: $matcha-tea-dark;
-        &:hover {
+        @media (hover: hover) {
+            &:hover {
+                color: $matcha-honeydew;
+                background-color: $matcha-tea-dark;
+                cursor: pointer;
+            }
+        }
+        &:active {
             color: $matcha-honeydew;
             background-color: $matcha-tea-dark;
             cursor: pointer;
         }
+        -webkit-tap-highlight-color: transparent;
     }
 
 }
