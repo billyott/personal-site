@@ -9,6 +9,9 @@
         background: $matcha-honeydew;
         height: 120%;
         z-index: -1;
+        @media (max-width: $mobile) {
+            height: 900px;
+        }
     }
     
     &__background-circles{
