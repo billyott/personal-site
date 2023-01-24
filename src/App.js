@@ -1,4 +1,5 @@
 import Background from './components/background';
+import UnderConstruction from './components/under-construction';
 import Navbar from './components/navbar';
 import Homepage from './components/homepage';
 import About from './components/about';
@@ -11,11 +12,12 @@ function App() {
   return (
     <div className="app">
       <Background />
-      <Navbar />
-      <Homepage />
-      <About />
+      {/* <Navbar /> */}
+      {/* <Homepage /> */}
+      <UnderConstruction />
+      {/* <About />
       <Portfolio />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }
