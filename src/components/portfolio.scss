@@ -69,12 +69,11 @@
         border-radius: 4px;
         height: 40px;
         color: black;
-        background-color: $matcha-cakecone;
+        background-color: $matcha-lemonchiffon;
         width: 70px;
 
         &:hover {
-            color: $matcha-honeydew;
-            background-color: $matcha-tea-dark;
+            background-color: $matcha-cakecone;
         }
     }
 }

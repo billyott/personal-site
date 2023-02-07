@@ -1,5 +1,8 @@
 # CHANGE LOG
 
+## v0.4.0
+- add jp lang support
+
 ## v0.3.0
 - consolidate about
 - update contact
