@@ -1,0 +1,18 @@
+@import '../styling-vars.scss';
+
+.toggle-lang {
+    position: fixed;
+    z-index: 2;
+    left: 5px;
+    top: 5px;
+    font-size: 0.8rem;
+    background-color: $matcha-lemonchiffon;
+    height: 25px;
+    width: 60px;
+    border-radius: 4px;
+    border-width: 1px;
+
+    &:hover {
+        background-color: $matcha-cakecone;
+    }
+}

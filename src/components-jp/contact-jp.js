@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import './contact-jp.scss';
+import '../components/contact.scss';
 
 export default function Contact() {
 
     return(
         <div className="contact">
             <div className="contact__header">
-                CONTACT
+                連絡
             </div>
             <div className="contact__contact-icons">
                 <a

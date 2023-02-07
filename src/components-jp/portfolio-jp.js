@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactPlayer from "react-player";
 
-import './portfolio-jp.scss';
+import '../components/portfolio.scss';
 import projects from  '../data/project-data.json';
 
 export default function Portfolio() {
@@ -31,7 +31,7 @@ export default function Portfolio() {
 
     return (
         <div className="portfolio">
-            <div className="portfolio__header">PORTFOLIO</div>
+            <div className="portfolio__header">ポートフォリオ</div>
             <div className="portfolio__content">
 
                 <div className="portfolio__prev-container-content">

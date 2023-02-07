@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import './navbar-jp.scss';
+import '../components/navbar.scss';
 
 export default function Navbar() {
 

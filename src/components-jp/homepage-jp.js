@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './homepage-jp.scss';
+import '../components/homepage.scss';
 
 export default function HomepageJP() {
 
