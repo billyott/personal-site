@@ -1,5 +1,4 @@
 import Background from './components/background';
-import UnderConstruction from './components/under-construction';
 import Navbar from './components/navbar';
 import Homepage from './components/homepage';
 import Portfolio from './components/portfolio';
@@ -15,7 +14,6 @@ function App() {
       <Homepage />
       <Portfolio />
       <Contact />
-      {/* <UnderConstruction /> */}
     </div>
   );
 }
