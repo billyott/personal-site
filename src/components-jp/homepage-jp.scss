@@ -1,0 +1,54 @@
+@import '../styling-vars.scss';
+
+.homepage {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    &__header {
+        font-size: 5rem;
+        font-weight: 500;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__sub-header {
+        margin-top: 30px;
+        font-size: 2.2rem;
+        padding: 0 15px;
+        font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__tagline {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+        font-weight: 300;
+        max-width: 650px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (max-width: $mobile) {
+        &__header {
+            font-size: 3.2rem;
+        }
+    
+        &__sub-header {
+            font-size: 1.3rem;
+        }
+    
+        &__tagline {
+            font-size: 1rem;
+        }
+    }
+
+}
