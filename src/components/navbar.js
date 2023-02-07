@@ -24,19 +24,6 @@ export default function Navbar() {
                 <li className='navbar__list-item'>
                     <Link
                         className="navbar__link"
-                        to="about"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        tabIndex='0'
-                        href=""
-                    >
-                        Bio
-                    </Link>
-                </li>
-                <li className='navbar__list-item'>
-                    <Link
-                        className="navbar__link"
                         to="portfolio"
                         smooth={true}
                         duration={500}
