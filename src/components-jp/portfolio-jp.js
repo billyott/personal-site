@@ -37,7 +37,7 @@ export default function Portfolio() {
                 <div className="portfolio__prev-container-content">
                     <div className="portfolio__toggle-container-wrapper">
                         <div className="portfolio__toggle-container portfolio__toggle-container--prev">
-                            <button className="portfolio__toggle portfolio__toggle--prev" onClick={toggleBack}>&laquo;prev</button>
+                            <button className="portfolio__toggle portfolio__toggle--prev" onClick={toggleBack}>&laquo;前</button>
                         </div>
                         <div className="portfolio__prev-details">
                             <div className="portfolio__prev-title">{selectedProject['title']}</div>
@@ -48,7 +48,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                         <div className="portfolio__toggle-container portfolio__toggle-container--next">
-                            <button className="portfolio__toggle portfolio__toggle--next" onClick={toggleNext}>next&raquo;</button>
+                            <button className="portfolio__toggle portfolio__toggle--next" onClick={toggleNext}>次&raquo;</button>
                         </div>
                     </div>
                     <div className="portfolio__player-container">
