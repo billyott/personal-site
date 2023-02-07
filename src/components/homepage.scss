@@ -10,21 +10,31 @@
     text-align: center;
     
     &__header {
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 500;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__sub-header {
         margin-top: 30px;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         padding: 0 15px;
         font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__tagline {
         margin-top: 30px;
-        font-size: 2.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
         font-weight: 300;
+        max-width: 650px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     @media (max-width: $mobile) {
