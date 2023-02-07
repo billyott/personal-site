@@ -8,7 +8,7 @@ export default function ToggleLanguage({ onClick, language }) {
         <button
             className="toggle-lang" 
             onClick={onClick}>
-            {language === 'jp' ? 'english' : '日本語'}
+            {language === 'jp' ? 'ENG' : '日本語'}
         </button>
     )
 }
