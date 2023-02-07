@@ -18,7 +18,7 @@ export default function Navbar() {
                         tabIndex='0'
                         href=""
                     >
-                        Home
+                        ホーム
                     </Link>
                 </li>
                 <li className='navbar__list-item'>
@@ -31,7 +31,7 @@ export default function Navbar() {
                         tabIndex='0'
                         href=""
                     >
-                        Portfolio
+                        ポートフォリオ
                     </Link>
                 </li>
                 <li className='navbar__list-item'>
@@ -44,7 +44,7 @@ export default function Navbar() {
                         tabIndex='0'
                         href=""
                     >
-                        Contact
+                        連絡
                     </Link>
                 </li>
             </ul>
