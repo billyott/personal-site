@@ -1,5 +1,9 @@
 # CHANGE LOG
 
+## v0.3.0
+- consolidate about
+- update contact
+
 ## v0.2.1
 - general clean up
 

@@ -18,4 +18,19 @@
         }
     }
 
+    &__contact-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: $mobile) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__icon {
+    }
+
 }
