@@ -14,10 +14,10 @@ export default function Homepage() {
             </div>
             <div className="homepage__tagline">
                 <p>
-                    I build websites using frameworks like Vue and React for work, but I have full stack training and experience with python, ruby, and sql too. I've been writing code since 2018 and made it my full time career in 2020.
+                    I build web apps and primarily develop with Vue and React. I have Full Stack training and experience with python, ruby, and sql too.
                 </p>
                 <p>
-                    I live in NYC and my hobbies include cooking, traveling, gaming, and learning Japanese.
+                    I live in Ann Arbor, Michigan. When I'm not building websites, I'm usually learning something new or cooking up a storm.
                 </p>
             </div>
         </div>
